@@ -1,0 +1,146 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+// }
+
+// *,
+// *::before,
+// *::after {
+//     box-sizing: inherit;
+// }
+
+// html {
+//     box-sizing: border-box;
+//     font-size: 62.5%;
+// }
+
+@import 'header';
+@import 'navbar';
+
+@font-face {
+    font-family: HelveticaNeue-Bold;
+    src: url(../assets/HelveticaNeue-Bold.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeue-Italic;
+    src: url(../assets/HelveticaNeue-Italic.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeue-Light;
+    src: url(../assets/HelveticaNeue-Light.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeue-Medium;
+    src: url(../assets/HelveticaNeue-Medium.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../assets/HelveticaNeue.otf);
+}
+
+body {
+   
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+
+
+}
+
+.top-header{
+    display:flex;
+    justify-content: space-between; 
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid green;
+    height: 40px;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // border: 1px solid red;
+    flex: 1 0 50%;
+    color:gray;
+
+    a {
+        text-decoration: none;
+        color:gray;
+    }
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid blue;
+   flex: 1 0 50%;
+   padding: 0 20px;
+  
+   a {
+    text-decoration: none;
+    color:gray;
+}
+
+.language{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    // border: 1px solid red;
+    flex: 1 0 auto;
+
+    .eng{
+        margin: 3px;
+    }
+    .eng:hover{
+        color:red;
+        font-weight: bold;
+       
+    }
+
+    .srb{
+        margin: 3px;
+    }
+
+    .srb:hover{
+        color:red;
+        font-weight: bold;
+    }
+}
+
+.predmeti{
+    justify-content: space-between;
+    // border: 3px solid violet;
+    flex: 3 0 auto;
+}
+}
+
+
+.iconice{
+    margin: 5px;
+    width: 11px;
+    opacity: 0.5;
+
+}
+
+.key{
+    transform: rotate(45deg);
+    margin-right: 15px;
+}
+
+.val{
+    width: 25px;
+}
+
+.pin{
+    margin-right: 10px;
+}
+
+
+
