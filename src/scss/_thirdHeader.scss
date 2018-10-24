@@ -1,0 +1,22 @@
+.third__section{
+    background: $color-background-red;
+
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    &--title{
+        color:white;
+    }
+
+    &--text{
+        color:yellow;
+    }
+
+    &-cards{
+        display: flex;
+        justify-content: space-evenly;
+        color:black;
+        font-size: 40px;
+    }
+   
+}

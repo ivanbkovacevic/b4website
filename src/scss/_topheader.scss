@@ -1,0 +1,195 @@
+@font-face {
+    font-family: HelveticaNeue-Bold;
+    src: url(../assets/HelveticaNeue-Bold.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeue-Italic;
+    src: url(../assets/HelveticaNeue-Italic.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeue-Light;
+    src: url(../assets/HelveticaNeue-Light.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeue-Medium;
+    src: url(../assets/HelveticaNeue-Medium.otf);
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../assets/HelveticaNeue.otf);
+}
+
+body {
+
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+
+
+}
+
+
+
+.left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // border: 1px solid red;
+    flex: 1 0 50%;
+
+
+    // a {
+    //     text-decoration: none;
+    //     color:$color-gray;
+    // }
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid blue;
+    flex: 1 0 50%;
+    padding: 0 20px;
+
+    // //    a {
+    // //     text-decoration: none;
+    // //     color:$color-gray;
+    // }
+
+    .language {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        // border: 1px solid red;
+        flex: 1 0 auto;
+
+        .eng {
+            margin: 3px;
+        }
+
+        .eng:hover {
+            color: red;
+            font-weight: bold;
+
+        }
+
+        .srb {
+            margin: 3px;
+        }
+
+        .srb:hover {
+            color: red;
+            font-weight: bold;
+        }
+    }
+
+    .predmeti {
+        justify-content: space-between;
+        // border: 3px solid violet;
+        flex: 3 0 auto;
+    }
+}
+
+
+.iconice {
+    margin: 5px;
+    width: 11px;
+    opacity: 0.5;
+
+}
+
+.key {
+    transform: rotate(45deg);
+    margin-right: 15px;
+}
+
+.val {
+    width: 25px;
+}
+
+.pin {
+    margin-right: 10px;
+}
+
+
+
+//////////////////////////////////////////////////////////////
+.top-header {
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    height: 40px;
+    background: $color-back;
+
+}
+
+.firstCol {
+    padding-left: 50px;
+
+    a {
+        text-decoration: none;
+        color: $color-gray;
+    }
+}
+
+#top-header-kontakt {
+    margin-left: 30px;
+}
+
+.secondCol {
+    padding: 0;
+
+    a {
+        text-decoration: none;
+        color: $color-gray;
+    }
+}
+
+
+#top-header-kursna-lista {
+    margin-left: 30px;
+}
+
+.thirdCol {
+    padding: 0;
+
+    a {
+        text-decoration: none;
+        color: $color-gray;
+    }
+}
+
+.fourtCol {
+
+   
+
+    padding-left: 120px;
+
+    .eng {
+        margin: 3px;
+    }
+
+    .eng:hover {
+        color: red;
+        font-weight: bold;
+    }
+
+    .srb {
+        margin: 3px;
+    }
+
+    .srb:hover {
+        color: red;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-gray;
+    }
+}

@@ -1,3 +1,83 @@
 .header{
     color:pink;
+    background: lightgreen;
+    position: relative;
+
+    .main-title{
+        position: absolute;
+        background: orange;
+        top:40%;
+        left:10%;
+        width: 500px;
+        z-index: 3;
+    }
+
+    .title1{
+      margin: 20px;
+        background: red;
+        z-index: 2;
+        color: white;
+    }
+    .title2{
+        margin: 20px;
+        background: blue;
+        z-index: 2;
+        font-size: 2rem;
+    }
+    .title3{
+        margin: 20px;
+        background: green;
+        z-index: 2;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    .button1{
+        margin: 20px;
+        background:white;
+        border-radius: 30px;
+        width: 150px;
+        z-index: 2;
+        font-size: 10px;
+        color:red;
+        padding: 8px;
+        font-weight: bold;
+     
+    }
+
+   
+
+    .button2{
+        position: absolute;
+        margin: 20px;
+        width: 30px;
+        background:white;
+        border-radius: 100%;
+        z-index: 2;
+        left:50%;
+        color:red;
+        bottom: 5%;
+        text-align: center;
+    }
+
+   
 }
+
+#mojnavbar{
+    position: absolute;
+    left:200px;
+    background: transparent !important;
+    z-index: 5;
+
+    a{
+        
+color:white;
+    }
+}
+
+#arrow{
+    margin-left: 12px;
+    color:red;
+  }
+
