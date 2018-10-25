@@ -1,7 +1,7 @@
-.header{
-    color:pink;
-    background: lightgreen;
+.section-1{
+  
     position: relative;
+    height: 85vh;
 
     .main-title{
         position: absolute;
@@ -65,9 +65,7 @@
 }
 
 #mojnavbar{
-    position: absolute;
-    left:200px;
-    background: transparent !important;
+    background-color: transparent !important;
     z-index: 5;
 
     a{
@@ -79,5 +77,14 @@ color:white;
 #arrow{
     margin-left: 12px;
     color:red;
+  }
+
+  .section-2{
+    position: absolute;
+    top:0;
+
+  }
+  .navbar-toggler-icon{
+     background:white;
   }
 
