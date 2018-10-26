@@ -1,27 +1,12 @@
-// * {
-//     margin: 0;
-//     padding: 0;
-// }
-
-// *,
-// *::before,
-// *::after {
-//     box-sizing: inherit;
-// }
-
-// html {
-//     box-sizing: border-box;
-//     font-size: 62.5%;
-// }
-
-
-
+@import 'customVariables';
+@import "../../node_modules/bootstrap/scss/bootstrap";
 @import 'variables';
 @import 'basics';
 @import 'topheader';
 @import 'header';
 @import 'navbar';
-@import 'thirdHeader';
+@import 'section3';
+@import 'section4';
 
 
 
