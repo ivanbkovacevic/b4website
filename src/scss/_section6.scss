@@ -1,0 +1,49 @@
+.section6{
+    border-top: 1px solid gray;
+    .header{
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    h4{
+        color: $color-gray;
+        margin-bottom: 20px;
+    }
+    img{
+        width: 100%;
+    }
+    .myTextRed{
+        color: red;
+    }
+    .iconica{
+        width: 10px;
+        height: 10px;
+        fill:red;
+    }
+
+    .inputInform{
+        width: 50%;
+        height: 30px;
+    }
+
+    .bdtInform{
+      background-color: red;
+      width: 100px;
+      height: 30px;
+      border: none;
+      color:white;
+    }
+
+    .bdtInformContainer{
+        padding: 50px;
+        background-color: $color-gray-light;
+    }
+    .pitanjeZaNas{
+        background-color: $color-back;
+    }
+    .btnPitanjeZaNas{
+        padding: 10px;
+    }
+}

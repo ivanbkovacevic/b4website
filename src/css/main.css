@@ -6537,25 +6537,89 @@ body {
   .section3 #arrow {
     fill: red; }
 
-.section4 {
+#section4 {
   text-align: center; }
-  .section4 .bottomRow {
+  #section4 .btn {
+    color: blue; }
+  #section4 .bottomRow {
     color: red;
     border-top: 1px solid gray;
     font-size: 1.5rem; }
-  .section4 .slika {
+  #section4 .slika {
     background-image: url(../assets/svg/reg.svg);
     background-repeat: no-repeat;
     background-size: content;
     background-position: left bottom;
-    background-size: 60%;
+    background-size: 40%;
     width: 100%; }
 
 #lizing {
-  width: 150px; }
+  width: 150px;
+  opacity: 1; }
 
 #osiguranje {
-  width: 150px; }
+  width: 150px;
+  opacity: 1; }
 
 #reg {
   width: 150px; }
+
+.section5 {
+  padding-top: 50px; }
+  .section5 .myText {
+    width: 50%; }
+  .section5 .myTextRed {
+    color: red; }
+  .section5 img {
+    width: 70%;
+    padding-bottom: 20px; }
+  .section5 .redBox {
+    position: absolute;
+    top: -30px;
+    left: 150px;
+    width: 60%;
+    height: 220px;
+    background-color: red;
+    z-index: -1; }
+  .section5 .iconica {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    fill: red; }
+  .section5 h1 {
+    color: #5e5b5b; }
+
+.section6 {
+  border-top: 1px solid gray; }
+  .section6 .header {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .section6 h4 {
+    color: #aaaaaa;
+    margin-bottom: 20px; }
+  .section6 img {
+    width: 100%; }
+  .section6 .myTextRed {
+    color: red; }
+  .section6 .iconica {
+    width: 10px;
+    height: 10px;
+    fill: red; }
+  .section6 .inputInform {
+    width: 50%;
+    height: 30px; }
+  .section6 .bdtInform {
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white; }
+  .section6 .bdtInformContainer {
+    padding: 50px;
+    background-color: #e0dfdf; }
+  .section6 .pitanjeZaNas {
+    background-color: #f2f2f2; }
+  .section6 .btnPitanjeZaNas {
+    padding: 10px; }

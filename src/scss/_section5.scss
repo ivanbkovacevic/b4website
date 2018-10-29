@@ -1,0 +1,38 @@
+.section5{
+padding-top: 50px;
+
+    .myText{
+        width: 50%;;
+    }
+    .myTextRed{
+        color:red;
+    }
+
+    img{
+        width: 70%;
+        padding-bottom: 20px;
+       
+       
+    }
+
+    .redBox{
+        position: absolute;
+        top: -30px;
+        left:150px;
+        width: 60%;
+        height: 220px;
+        background-color: red;
+        z-index:-1;
+    }
+
+    .iconica{
+display: inline-block;
+    width: 10px;
+    height: 10px;
+    fill:red;
+    }
+
+    h1{
+        color:$color-gray-dark;
+    }
+}

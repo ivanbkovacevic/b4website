@@ -1,5 +1,5 @@
-@import 'customVariables';
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import 'override_bootstrap';
 @import 'variables';
 @import 'basics';
 @import 'topheader';
@@ -7,6 +7,8 @@
 @import 'navbar';
 @import 'section3';
 @import 'section4';
+@import 'section5';
+@import 'section6';
 
 
 

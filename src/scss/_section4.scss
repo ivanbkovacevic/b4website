@@ -1,4 +1,7 @@
-.section4{
+#section4{
+    .btn{
+        color:blue;
+    }
 text-align: center;
 
 .bottomRow{
@@ -13,7 +16,7 @@ text-align: center;
     background-repeat: no-repeat;
     background-size: content;
     background-position: left bottom;
-    background-size: 60%;
+    background-size: 40%;
     width: 100%;
 }
 }
@@ -21,10 +24,12 @@ text-align: center;
 
 #lizing{
     width: 150px;
+    opacity: 1;
 }
 
 #osiguranje{
     width: 150px;
+    opacity: 1;
 }
 
 #reg{
