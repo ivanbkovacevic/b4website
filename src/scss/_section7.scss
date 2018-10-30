@@ -1,0 +1,29 @@
+.section7{
+
+    .inputInform{
+        width: 50%;
+        height: 30px;
+    }
+
+    .bdtInform{
+      background-color: red;
+      width: 100px;
+      height: 30px;
+      border: none;
+      color:white;
+    }
+
+    .bdtInformContainer{
+        padding: 66px;
+        background-color: $color-gray-light;
+    }
+    .pitanjeZaNas{
+        background-color: $color-back;
+        border-bottom: 2px solid $color-gray;
+    }
+    .btnPitanjeZaNas{
+        border: 2px solid $color-text-red;
+        padding:20px 100px;
+        color:$color-gray-dark;
+    }
+}

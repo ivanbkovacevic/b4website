@@ -1,21 +1,54 @@
 .section3{
     text-align: center;
 
+    h1{
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    h6{
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+
+    a{
+        font-size: 1.1rem;
+        text-decoration: none;
+        color:$color-text-red;
+    }
+
+    .head-p{
+        width: 768px;
+        margin:0 auto;
+        margin-bottom: 68px;
+    }
+
     .broj{
-        font-size: 5rem;
-        color:red;
+        font-size: 5.5rem;
+        font-weight: 100;
+        color:$color-text-red;
+    }
+    .brojevi{
+        margin-bottom: 60px;
     }
 
     .bottomRow{
-        color:red;
-        border-top: 1px solid gray;
-        font-size: 1.5rem;
+        color:$color-text-red;
+        border-top: 2px solid $color-gray-light;
+        font-size: 1.2rem;
       
     }
 
-    #arrow{
+     .iconica-strelica{
+        width: 10px;
+        height: 10px;
         fill:red;
-        
     }
+
+
+
 }
 

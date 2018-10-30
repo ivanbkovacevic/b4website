@@ -1,8 +1,33 @@
-#section4{
-    .btn{
-        color:blue;
+.section4{
+    text-align: center;
+
+    img{
+        margin-top: 143px;
+        margin-bottom: 68px;
     }
-text-align: center;
+    .head-p{
+        width: 750px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        margin-bottom: 78px;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    p{
+        color:$color-gray;
+    }
+    a{
+        font-size: 1.1rem;
+        text-decoration: none;
+        color:$color-text-red;
+    }
+
+    .icons{
+        margin-bottom: 43px;
+    }
 
 .bottomRow{
     color:red;
@@ -11,27 +36,26 @@ text-align: center;
   
 }
 
-.slika{
-    background-image:url(../assets/svg/reg.svg);
-    background-repeat: no-repeat;
-    background-size: content;
-    background-position: left bottom;
-    background-size: 40%;
-    width: 100%;
-}
 }
 
-
-#lizing{
-    width: 150px;
-    opacity: 1;
+.iconica-strelica{
+    width: 10px;
+    height: 10px;
+    fill:red;
 }
-
-#osiguranje{
-    width: 150px;
-    opacity: 1;
+.iconica-crvena{
+    width: 120px;
+    fill:red;
 }
-
-#reg{
-    width: 150px;
+.registracija{
+    height: 60px;
+    margin-bottom: 50px;
+}
+.lizing{
+    height: 85px;
+    margin-bottom: 50px;
+}
+.osiguranje{
+    height: 80px;
+    margin-bottom: 50px;
 }

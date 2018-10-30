@@ -6527,99 +6527,180 @@ body {
 
 .section3 {
   text-align: center; }
+  .section3 h1 {
+    font-size: 2rem;
+    padding: 5px; }
+  .section3 h6 {
+    font-size: 1.2rem; }
+  .section3 p {
+    font-size: 1.1rem; }
+  .section3 a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #e60028; }
+  .section3 .head-p {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 68px; }
   .section3 .broj {
-    font-size: 5rem;
-    color: red; }
+    font-size: 5.5rem;
+    font-weight: 100;
+    color: #e60028; }
+  .section3 .brojevi {
+    margin-bottom: 60px; }
   .section3 .bottomRow {
-    color: red;
-    border-top: 1px solid gray;
-    font-size: 1.5rem; }
-  .section3 #arrow {
+    color: #e60028;
+    border-top: 2px solid #e0dfdf;
+    font-size: 1.2rem; }
+  .section3 .iconica-strelica {
+    width: 10px;
+    height: 10px;
     fill: red; }
 
-#section4 {
+.section4 {
   text-align: center; }
-  #section4 .btn {
-    color: blue; }
-  #section4 .bottomRow {
+  .section4 img {
+    margin-top: 143px;
+    margin-bottom: 68px; }
+  .section4 .head-p {
+    width: 750px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-bottom: 78px; }
+  .section4 h3 {
+    font-size: 2rem; }
+  .section4 p {
+    color: #aaaaaa; }
+  .section4 a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #e60028; }
+  .section4 .icons {
+    margin-bottom: 43px; }
+  .section4 .bottomRow {
     color: red;
     border-top: 1px solid gray;
     font-size: 1.5rem; }
-  #section4 .slika {
-    background-image: url(../assets/svg/reg.svg);
-    background-repeat: no-repeat;
-    background-size: content;
-    background-position: left bottom;
-    background-size: 40%;
-    width: 100%; }
 
-#lizing {
-  width: 150px;
-  opacity: 1; }
+.iconica-strelica {
+  width: 10px;
+  height: 10px;
+  fill: red; }
 
-#osiguranje {
-  width: 150px;
-  opacity: 1; }
+.iconica-crvena {
+  width: 120px;
+  fill: red; }
 
-#reg {
-  width: 150px; }
+.registracija {
+  height: 60px;
+  margin-bottom: 50px; }
+
+.lizing {
+  height: 85px;
+  margin-bottom: 50px; }
+
+.osiguranje {
+  height: 80px;
+  margin-bottom: 50px; }
 
 .section5 {
   padding-top: 50px; }
-  .section5 .myText {
-    width: 50%; }
-  .section5 .myTextRed {
-    color: red; }
+  .section5 a {
+    display: block;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #e60028;
+    margin-bottom: 114px; }
+  .section5 h1 {
+    margin-top: 330px;
+    font-size: 2.4rem; }
   .section5 img {
-    width: 70%;
+    margin-top: 264px;
+    width: 960px;
     padding-bottom: 20px; }
   .section5 .redBox {
     position: absolute;
-    top: -30px;
+    top: 200px;
     left: 150px;
-    width: 60%;
-    height: 220px;
+    width: 865px;
+    height: 375px;
     background-color: red;
     z-index: -1; }
-  .section5 .iconica {
-    display: inline-block;
+  .section5 .iconica-strelica {
     width: 10px;
     height: 10px;
     fill: red; }
   .section5 h1 {
     color: #5e5b5b; }
+  .section5 .main-p {
+    width: 765px;
+    font-size: 1.2rem; }
 
 .section6 {
-  border-top: 1px solid gray; }
-  .section6 .header {
+  border-top: 2px solid #aaaaaa; }
+  .section6 h1 {
     text-align: center;
-    font-size: 3rem;
-    padding-top: 50px;
-    padding-bottom: 50px; }
+    margin-top: 75px;
+    font-size: 1.5rem;
+    margin-bottom: 60px; }
   .section6 h4 {
     color: #aaaaaa;
     margin-bottom: 20px; }
+  .section6 h6 {
+    font-size: 1rem;
+    color: #5e5b5b;
+    font-style: bold; }
   .section6 img {
     width: 100%; }
-  .section6 .myTextRed {
-    color: red; }
-  .section6 .iconica {
+  .section6 a {
+    display: block;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #e60028;
+    margin-bottom: 70px; }
+  .section6 .iconica-strelica {
     width: 10px;
     height: 10px;
     fill: red; }
-  .section6 .inputInform {
-    width: 50%;
-    height: 30px; }
-  .section6 .bdtInform {
-    background-color: red;
-    width: 100px;
-    height: 30px;
-    border: none;
-    color: white; }
-  .section6 .bdtInformContainer {
-    padding: 50px;
-    background-color: #e0dfdf; }
-  .section6 .pitanjeZaNas {
-    background-color: #f2f2f2; }
-  .section6 .btnPitanjeZaNas {
-    padding: 10px; }
+
+.section7 .inputInform {
+  width: 50%;
+  height: 30px; }
+
+.section7 .bdtInform {
+  background-color: red;
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: white; }
+
+.section7 .bdtInformContainer {
+  padding: 66px;
+  background-color: #e0dfdf; }
+
+.section7 .pitanjeZaNas {
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #aaaaaa; }
+
+.section7 .btnPitanjeZaNas {
+  border: 2px solid #e60028;
+  padding: 20px 100px;
+  color: #5e5b5b; }
+
+.myFooter {
+  color: #aaaaaa; }
+  .myFooter h6 {
+    margin-top: 90px;
+    margin-bottom: 65px; }
+  .myFooter a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #aaaaaa;
+    margin-bottom: 35px; }
+  .myFooter .iconice-sive {
+    width: 10px;
+    height: 10px;
+    fill: #aaaaaa; }
+    .myFooter .iconice-sive .iconica {
+      width: 10px;
+      height: 10px; }

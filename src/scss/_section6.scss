@@ -1,49 +1,39 @@
 .section6{
-    border-top: 1px solid gray;
-    .header{
+
+    border-top: 2px solid $color-gray;
+
+    h1{
         text-align: center;
-        font-size: 3rem;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        margin-top: 75px;
+        font-size: 1.5rem;
+       margin-bottom: 60px;
     }
 
     h4{
         color: $color-gray;
         margin-bottom: 20px;
     }
+    h6{
+        font-size: 1rem;
+        color: $color-gray-dark;
+        font-style: bold;
+    }
     img{
         width: 100%;
     }
-    .myTextRed{
-        color: red;
+    a{
+        display: block;
+        font-size: 1.1rem;
+        text-decoration: none;
+        color:$color-text-red;
+        margin-bottom:70px; 
     }
-    .iconica{
+
+    .iconica-strelica{
         width: 10px;
         height: 10px;
         fill:red;
     }
 
-    .inputInform{
-        width: 50%;
-        height: 30px;
-    }
-
-    .bdtInform{
-      background-color: red;
-      width: 100px;
-      height: 30px;
-      border: none;
-      color:white;
-    }
-
-    .bdtInformContainer{
-        padding: 50px;
-        background-color: $color-gray-light;
-    }
-    .pitanjeZaNas{
-        background-color: $color-back;
-    }
-    .btnPitanjeZaNas{
-        padding: 10px;
-    }
+   
 }

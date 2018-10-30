@@ -1,0 +1,28 @@
+.myFooter{
+    color:$color-gray;
+    h6{
+        margin-top: 90px;
+        margin-bottom: 65px;
+    }
+
+    a{
+       
+        font-size: 1rem;
+        text-decoration: none;
+        color:$color-gray;
+        margin-bottom:35px; 
+    }
+
+    .iconice-sive{
+       
+        width: 10px;
+        height: 10px;
+        fill:$color-gray;
+
+        .iconica{
+         
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
