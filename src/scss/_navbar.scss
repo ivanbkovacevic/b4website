@@ -1,14 +1,31 @@
-.my-links{
-   margin-left: 20px;
+nav{
+    position: absolute;
+    top:50px;
+    background-color: transparent !important;
+    z-index: 555;
+
+    a {
+    color:white;
+  
+    }
+
+
+.navbar-expand-lg{
+    background-color: transparent !important;
+    z-index: 555;
+}
+
+.navbar-toggler-icon{
+    border: 1px solid white;
+   
+    color:white;
+    
 }
 
 
 
-#navbarSupportedContent{
-   margin-left: 400px;
 }
 
-.mojLi{
-    margin-left: auto;
-}
+
+
 

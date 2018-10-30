@@ -6353,11 +6353,6 @@ body {
   font-family: HelveticaNeue;
   src: url(../assets/HelveticaNeue.otf); }
 
-body {
-  font-family: 'HelveticaNeue', sans-serif;
-  font-weight: 400;
-  line-height: 1.6; }
-
 .left {
   display: flex;
   justify-content: space-around;
@@ -6451,33 +6446,35 @@ body {
     text-decoration: none;
     color: #aaaaaa; }
 
-.section-1 {
-  position: relative;
-  height: 85vh; }
-  .section-1 .main-title {
+.heroHeader {
+  position: relative; }
+  .heroHeader .main-title {
     position: absolute;
-    background: orange;
+    border: 1px solid orange;
+    color: white;
     top: 40%;
     left: 10%;
     width: 500px;
     z-index: 3; }
-  .section-1 .title1 {
+  .heroHeader .title1 {
     margin: 20px;
-    background: red;
     z-index: 2;
+    border: 1px solid red;
     color: white; }
-  .section-1 .title2 {
+  .heroHeader .title2 {
     margin: 20px;
-    background: blue;
+    border: 1px solid blue;
+    color: white;
     z-index: 2;
     font-size: 2rem; }
-  .section-1 .title3 {
+  .heroHeader .title3 {
     margin: 20px;
-    background: green;
+    border: 1px solid orange;
+    color: white;
     z-index: 2; }
-  .section-1 a {
+  .heroHeader a {
     text-decoration: none; }
-  .section-1 .button1 {
+  .heroHeader .button1 {
     margin: 20px;
     background: white;
     border-radius: 30px;
@@ -6487,7 +6484,7 @@ body {
     color: red;
     padding: 8px;
     font-weight: bold; }
-  .section-1 .button2 {
+  .heroHeader .button2 {
     position: absolute;
     margin: 20px;
     width: 30px;
@@ -6499,31 +6496,19 @@ body {
     bottom: 5%;
     text-align: center; }
 
-#mojnavbar {
-  background-color: transparent !important;
-  z-index: 5; }
-  #mojnavbar a {
-    color: white; }
-
-#arrow {
-  margin-left: 12px;
-  color: red; }
-
-.section-2 {
+nav {
   position: absolute;
-  top: 0; }
-
-.navbar-toggler-icon {
-  background: white; }
-
-.my-links {
-  margin-left: 20px; }
-
-#navbarSupportedContent {
-  margin-left: 400px; }
-
-.mojLi {
-  margin-left: auto; }
+  top: 50px;
+  background-color: transparent !important;
+  z-index: 555; }
+  nav a {
+    color: white; }
+  nav .navbar-expand-lg {
+    background-color: transparent !important;
+    z-index: 555; }
+  nav .navbar-toggler-icon {
+    border: 1px solid white;
+    color: white; }
 
 .section3 {
   text-align: center; }

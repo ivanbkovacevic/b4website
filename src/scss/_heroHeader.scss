@@ -1,11 +1,15 @@
-.section-1{
+
+
+.heroHeader{
   
     position: relative;
-    height: 85vh;
+   
+
 
     .main-title{
         position: absolute;
-        background: orange;
+        border: 1px solid orange;
+        color:white;
         top:40%;
         left:10%;
         width: 500px;
@@ -14,19 +18,22 @@
 
     .title1{
       margin: 20px;
-        background: red;
+     
         z-index: 2;
-        color: white;
+        border: 1px solid red;
+        color:white
     }
     .title2{
         margin: 20px;
-        background: blue;
+        border: 1px solid blue;
+        color:white;
         z-index: 2;
         font-size: 2rem;
     }
     .title3{
         margin: 20px;
-        background: green;
+        border: 1px solid orange;
+        color:white;
         z-index: 2;
     }
 
@@ -46,8 +53,6 @@
      
     }
 
-   
-
     .button2{
         position: absolute;
         margin: 20px;
@@ -64,27 +69,4 @@
    
 }
 
-#mojnavbar{
-    background-color: transparent !important;
-    z-index: 5;
-
-    a{
-        
-color:white;
-    }
-}
-
-#arrow{
-    margin-left: 12px;
-    color:red;
-  }
-
-  .section-2{
-    position: absolute;
-    top:0;
-
-  }
-  .navbar-toggler-icon{
-     background:white;
-  }
 
