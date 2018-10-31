@@ -1,21 +1,23 @@
 .section3{
     text-align: center;
-
+   
     h1{
-        font-size: 2rem;
+        margin-top: 148px;
+        @include font-size(3.2);
         padding: 5px;
     }
 
     h6{
-        font-size: 1.2rem;
+        @include font-size(1.4);
+        margin-bottom: 26px;
     }
 
     p{
-        font-size: 1.1rem;
+        @include font-size(1.4);
     }
 
     a{
-        font-size: 1.1rem;
+        @include font-size(1.8);
         text-decoration: none;
         color:$color-text-red;
     }
@@ -24,10 +26,11 @@
         width: 768px;
         margin:0 auto;
         margin-bottom: 68px;
+        @include font-size(1.8);
     }
 
-    .broj{
-        font-size: 5.5rem;
+    h2{
+        @include font-size(9.3);
         font-weight: 100;
         color:$color-text-red;
     }

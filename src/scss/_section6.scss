@@ -5,16 +5,17 @@
     h1{
         text-align: center;
         margin-top: 75px;
-        font-size: 1.5rem;
+        @include font-size(2.3);
        margin-bottom: 60px;
     }
 
     h4{
-        color: $color-gray;
+        @include font-size(1.9);
         margin-bottom: 20px;
+        margin-top: 10px;
     }
     h6{
-        font-size: 1rem;
+        @include font-size(1.3);
         color: $color-gray-dark;
         font-style: bold;
     }
@@ -23,10 +24,14 @@
     }
     a{
         display: block;
-        font-size: 1.1rem;
+        @include font-size(1.4);
         text-decoration: none;
         color:$color-text-red;
         margin-bottom:70px; 
+    }
+    p{
+        @include font-size(1.4);
+        color: $color-gray-dark;
     }
 
     .iconica-strelica{

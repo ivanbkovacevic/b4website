@@ -3,26 +3,35 @@
     h6{
         margin-top: 90px;
         margin-bottom: 65px;
+        @include font-size(1.3);
     }
 
     a{
        
-        font-size: 1rem;
+        @include font-size(1.4);
         text-decoration: none;
         color:$color-gray;
         margin-bottom:35px; 
     }
 
     .iconice-sive{
+       border: 1px solid blue;
+       width: 100%;
+
+       a{
+        margin-bottom:0; 
+        display: inline-block;
+       }
+      
        
-        width: 10px;
-        height: 10px;
-        fill:$color-gray;
+ 
 
         .iconica{
-         
+         display: inline-block;
             width: 10px;
             height: 10px;
+            margin-bottom:0; 
+           
         }
     }
 }

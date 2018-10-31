@@ -1,29 +1,63 @@
-.section7{
+.section7 {
 
-    .inputInform{
-        width: 50%;
-        height: 30px;
+    h3 {
+        @include font-size(2.3);
     }
 
-    .bdtInform{
-      background-color: red;
-      width: 100px;
-      height: 30px;
-      border: none;
-      color:white;
+    p {
+        @include font-size(1.8);
+        margin-bottom: 38px;
     }
 
-    .bdtInformContainer{
+    .inputInform {
+        float: left;
+        width: 636px;
+        height: 50px;
+        text-indent: 20px;
+        @include font-size(1.5);
+        color: $color-gray-light;
+
+    }
+
+    .myForm {
+        display: inline-block;
+
+    }
+
+    .bdtInform {
+       float: left;
+        background-color: $color-text-red;
+        width: 182px;
+        height: 50px;
+        border: none;
+
+        color: white;
+        padding: 15px 50px;
+        @include font-size(1.4);
+    }
+
+    .bdtInformContainer {
         padding: 66px;
         background-color: $color-gray-light;
     }
-    .pitanjeZaNas{
+
+    .pitanjeZaNas {
         background-color: $color-back;
         border-bottom: 2px solid $color-gray;
+
+        h3 {
+            @include font-size(2.4);
+        }
+
+        p {
+            @include font-size(1.7);
+        }
     }
-    .btnPitanjeZaNas{
+
+    .btnPitanjeZaNas {
         border: 2px solid $color-text-red;
-        padding:20px 100px;
-        color:$color-gray-dark;
+        padding: 20px 100px;
+        color: $color-gray-dark;
+        @include font-size(1.4);
     }
 }

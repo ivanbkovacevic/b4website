@@ -6323,7 +6323,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /* Sets up the Base 10 stuff */ }
 
 body {
   font-family: 'HelveticaNeue', sans-serif;
@@ -6450,85 +6451,167 @@ body {
   position: relative; }
   .heroHeader .main-title {
     position: absolute;
-    border: 1px solid orange;
     color: white;
-    top: 40%;
-    left: 10%;
+    top: 225px;
+    left: 130px;
     width: 500px;
     z-index: 3; }
   .heroHeader .title1 {
-    margin: 20px;
+    display: inline-block;
+    opacity: 0;
+    margin-bottom: 45px;
+    padding: 3px 6px;
     z-index: 2;
-    border: 1px solid red;
-    color: white; }
+    background-color: #e60028;
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    font-size: 1.4rem; }
   .heroHeader .title2 {
-    margin: 20px;
-    border: 1px solid blue;
+    padding: 0;
+    opacity: 0;
     color: white;
     z-index: 2;
-    font-size: 2rem; }
+    margin-bottom: 35px;
+    font-size: 57px;
+    font-size: 5.7rem; }
   .heroHeader .title3 {
-    margin: 20px;
-    border: 1px solid orange;
     color: white;
-    z-index: 2; }
+    opacity: 0;
+    z-index: 2;
+    font-size: 18px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 50px; }
   .heroHeader a {
     text-decoration: none; }
+    .heroHeader a:hover .iconica-strelica {
+      animation: strelica-levo-desno 0.4s forwards; }
+  .heroHeader .iconica-strelica {
+    margin-left: 18px; }
   .heroHeader .button1 {
-    margin: 20px;
     background: white;
     border-radius: 30px;
-    width: 150px;
+    width: 185px;
     z-index: 2;
-    font-size: 10px;
-    color: red;
-    padding: 8px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #e60028;
+    padding-left: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     font-weight: bold; }
   .heroHeader .button2 {
     position: absolute;
-    margin: 20px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
     background: white;
     border-radius: 100%;
     z-index: 2;
     left: 50%;
-    color: red;
-    bottom: 5%;
-    text-align: center; }
+    color: #e60028;
+    bottom: 5%; }
+    .heroHeader .button2:hover .iconica-strelica-dugme {
+      animation: strelica-dole-gore 0.4s forwards; }
+    .heroHeader .button2 .iconica-strelica-dugme {
+      transform: rotate(90deg);
+      height: 16px;
+      width: 16px;
+      fill: #e60028; }
+  .heroHeader ol {
+    width: 50px;
+    margin-left: auto; }
+  .heroHeader .carousel-li {
+    width: 5px;
+    height: 5px;
+    border-radius: 100px; }
+  .heroHeader .sliding1 {
+    animation: sliding-up 0.7s forwards; }
+  .heroHeader .sliding2 {
+    animation: sliding-up 0.7s forwards;
+    animation-delay: 0.3s; }
+  .heroHeader .sliding3 {
+    animation: sliding-up 0.7s forwards;
+    animation-delay: 0.6s; }
+  .heroHeader .sliding4 {
+    animation: sliding-up 0.7s forwards;
+    animation-delay: 0.9s; }
 
-nav {
+@keyframes strelica-levo-desno {
+  0% {
+    transform: translateX(0px); }
+  50% {
+    transform: translateX(20px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes strelica-dole-gore {
+  0% {
+    transform: translateY(0px) rotate(90deg); }
+  50% {
+    transform: translateY(20px) rotate(90deg); }
+  100% {
+    transform: translateX(0px) rotate(90deg); } }
+
+@keyframes sliding-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+.navbar {
   position: absolute;
-  top: 50px;
+  padding-top: 42px;
+  top: 0px;
   background-color: transparent !important;
   z-index: 555; }
-  nav a {
-    color: white; }
-  nav .navbar-expand-lg {
+  .navbar .navbar-expand-md {
     background-color: transparent !important;
     z-index: 555; }
-  nav .navbar-toggler-icon {
+  .navbar .navbar-toggler-icon {
     border: 1px solid white;
     color: white; }
+  .navbar .iconica-brand {
+    height: 30px; }
+  .navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-size: 1.4rem;
+    transition: all 0.3s; }
+    .navbar .nav-link:hover {
+      color: #e60028; }
 
 .section3 {
   text-align: center; }
   .section3 h1 {
-    font-size: 2rem;
+    margin-top: 148px;
+    font-size: 32px;
+    font-size: 3.2rem;
     padding: 5px; }
   .section3 h6 {
-    font-size: 1.2rem; }
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin-bottom: 26px; }
   .section3 p {
-    font-size: 1.1rem; }
+    font-size: 14px;
+    font-size: 1.4rem; }
   .section3 a {
-    font-size: 1.1rem;
+    font-size: 18px;
+    font-size: 1.8rem;
     text-decoration: none;
     color: #e60028; }
   .section3 .head-p {
     width: 768px;
     margin: 0 auto;
-    margin-bottom: 68px; }
-  .section3 .broj {
-    font-size: 5.5rem;
+    margin-bottom: 68px;
+    font-size: 18px;
+    font-size: 1.8rem; }
+  .section3 h2 {
+    font-size: 93px;
+    font-size: 9.3rem;
     font-weight: 100;
     color: #e60028; }
   .section3 .brojevi {
@@ -6552,10 +6635,18 @@ nav {
     margin: 0 auto;
     font-size: 1.2rem;
     margin-bottom: 78px; }
+  .section4 h2 {
+    font-size: 32px;
+    font-size: 3.2rem;
+    margin-bottom: 28px; }
   .section4 h3 {
-    font-size: 2rem; }
+    font-size: 32px;
+    font-size: 3.2rem;
+    margin-bottom: 22px; }
   .section4 p {
-    color: #aaaaaa; }
+    color: #aaaaaa;
+    font-size: 14px;
+    font-size: 1.4rem; }
   .section4 a {
     font-size: 1.1rem;
     text-decoration: none;
@@ -6563,22 +6654,21 @@ nav {
   .section4 .icons {
     margin-bottom: 43px; }
   .section4 .bottomRow {
-    color: red;
+    color: #e60028;
     border-top: 1px solid gray;
-    font-size: 1.5rem; }
+    padding: 33px; }
+    .section4 .bottomRow a {
+      font-size: 18px;
+      font-size: 1.8rem; }
 
 .iconica-strelica {
   width: 10px;
   height: 10px;
-  fill: red; }
+  fill: #e60028; }
 
 .iconica-crvena {
   width: 120px;
-  fill: red; }
-
-.registracija {
-  height: 60px;
-  margin-bottom: 50px; }
+  fill: #e60028; }
 
 .lizing {
   height: 85px;
@@ -6588,17 +6678,27 @@ nav {
   height: 80px;
   margin-bottom: 50px; }
 
+.registracija {
+  height: 85px;
+  margin-bottom: 50px; }
+
 .section5 {
   padding-top: 50px; }
   .section5 a {
     display: block;
-    font-size: 1.1rem;
+    font-size: 18px;
+    font-size: 1.8rem;
     text-decoration: none;
     color: #e60028;
     margin-bottom: 114px; }
+  .section5 p {
+    font-size: 18px;
+    font-size: 1.8rem; }
   .section5 h1 {
     margin-top: 330px;
-    font-size: 2.4rem; }
+    font-size: 42px;
+    font-size: 4.2rem;
+    color: #5e5b5b; }
   .section5 img {
     margin-top: 264px;
     width: 960px;
@@ -6615,49 +6715,78 @@ nav {
     width: 10px;
     height: 10px;
     fill: red; }
-  .section5 h1 {
-    color: #5e5b5b; }
   .section5 .main-p {
     width: 765px;
-    font-size: 1.2rem; }
+    font-size: 18px;
+    font-size: 1.8rem; }
 
 .section6 {
   border-top: 2px solid #aaaaaa; }
   .section6 h1 {
     text-align: center;
     margin-top: 75px;
-    font-size: 1.5rem;
+    font-size: 23px;
+    font-size: 2.3rem;
     margin-bottom: 60px; }
   .section6 h4 {
-    color: #aaaaaa;
-    margin-bottom: 20px; }
+    font-size: 19px;
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    margin-top: 10px; }
   .section6 h6 {
-    font-size: 1rem;
+    font-size: 13px;
+    font-size: 1.3rem;
     color: #5e5b5b;
     font-style: bold; }
   .section6 img {
     width: 100%; }
   .section6 a {
     display: block;
-    font-size: 1.1rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     text-decoration: none;
     color: #e60028;
     margin-bottom: 70px; }
+  .section6 p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #5e5b5b; }
   .section6 .iconica-strelica {
     width: 10px;
     height: 10px;
     fill: red; }
 
+.section7 h3 {
+  font-size: 23px;
+  font-size: 2.3rem; }
+
+.section7 p {
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 38px; }
+
 .section7 .inputInform {
-  width: 50%;
-  height: 30px; }
+  float: left;
+  width: 636px;
+  height: 50px;
+  text-indent: 20px;
+  font-size: 15px;
+  font-size: 1.5rem;
+  color: #e0dfdf; }
+
+.section7 .myForm {
+  display: inline-block; }
 
 .section7 .bdtInform {
-  background-color: red;
-  width: 100px;
-  height: 30px;
+  float: left;
+  background-color: #e60028;
+  width: 182px;
+  height: 50px;
   border: none;
-  color: white; }
+  color: white;
+  padding: 15px 50px;
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 .section7 .bdtInformContainer {
   padding: 66px;
@@ -6666,26 +6795,41 @@ nav {
 .section7 .pitanjeZaNas {
   background-color: #f2f2f2;
   border-bottom: 2px solid #aaaaaa; }
+  .section7 .pitanjeZaNas h3 {
+    font-size: 24px;
+    font-size: 2.4rem; }
+  .section7 .pitanjeZaNas p {
+    font-size: 17px;
+    font-size: 1.7rem; }
 
 .section7 .btnPitanjeZaNas {
   border: 2px solid #e60028;
   padding: 20px 100px;
-  color: #5e5b5b; }
+  color: #5e5b5b;
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 .myFooter {
   color: #aaaaaa; }
   .myFooter h6 {
     margin-top: 90px;
-    margin-bottom: 65px; }
+    margin-bottom: 65px;
+    font-size: 13px;
+    font-size: 1.3rem; }
   .myFooter a {
-    font-size: 1rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     text-decoration: none;
     color: #aaaaaa;
     margin-bottom: 35px; }
   .myFooter .iconice-sive {
-    width: 10px;
-    height: 10px;
-    fill: #aaaaaa; }
+    border: 1px solid blue;
+    width: 100%; }
+    .myFooter .iconice-sive a {
+      margin-bottom: 0;
+      display: inline-block; }
     .myFooter .iconice-sive .iconica {
+      display: inline-block;
       width: 10px;
-      height: 10px; }
+      height: 10px;
+      margin-bottom: 0; }

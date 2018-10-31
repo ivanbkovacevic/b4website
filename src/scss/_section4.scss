@@ -1,5 +1,6 @@
 .section4{
     text-align: center;
+    
 
     img{
         margin-top: 143px;
@@ -12,12 +13,19 @@
         margin-bottom: 78px;
     }
 
+    h2{
+        @include font-size(3.2);
+        margin-bottom: 28px;
+    }
+
     h3{
-        font-size: 2rem;
+        @include font-size(3.2);
+        margin-bottom: 22px;
     }
 
     p{
         color:$color-gray;
+        @include font-size(1.4);
     }
     a{
         font-size: 1.1rem;
@@ -30,9 +38,14 @@
     }
 
 .bottomRow{
-    color:red;
+    color:$color-text-red;
     border-top: 1px solid gray;
-    font-size: 1.5rem;
+    padding: 33px;
+    
+   a{
+      
+    @include font-size(1.8);
+   }
   
 }
 
@@ -41,21 +54,23 @@
 .iconica-strelica{
     width: 10px;
     height: 10px;
-    fill:red;
+    fill:$color-text-red;
 }
 .iconica-crvena{
     width: 120px;
-    fill:red;
+    fill:$color-text-red;
 }
-.registracija{
-    height: 60px;
-    margin-bottom: 50px;
-}
+
 .lizing{
     height: 85px;
     margin-bottom: 50px;
 }
 .osiguranje{
     height: 80px;
+    margin-bottom: 50px;
+}
+
+.registracija{
+    height: 85px;
     margin-bottom: 50px;
 }

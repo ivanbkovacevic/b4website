@@ -1,48 +1,51 @@
-.section5{
-padding-top: 50px;
+.section5 {
+    padding-top: 50px;
 
-a{
-    display: block;
-    font-size: 1.1rem;
-    text-decoration: none;
-    color:$color-text-red;
-    margin-bottom:114px; 
-}
-
-h1{
-    margin-top: 330px;
-    font-size: 2.4rem;
-}
-  
-
-    img{
-        margin-top: 264px;
-        width: 960px;
-        padding-bottom: 20px; 
-       
+    a {
+        display: block;
+        @include font-size(1.8);
+        text-decoration: none;
+        color: $color-text-red;
+        margin-bottom: 114px;
+    }
+    p{
+        @include font-size(1.8);
     }
 
-    .redBox{
+    h1 {
+        margin-top: 330px;
+        @include font-size(4.2);
+        color: $color-gray-dark;
+    }
+
+
+    img {
+        margin-top: 264px;
+        width: 960px;
+        padding-bottom: 20px;
+
+    }
+
+    .redBox {
         position: absolute;
         top: 200px;
-        left:150px;
+        left: 150px;
         width: 865px;
         height: 375px;
         background-color: red;
-        z-index:-1;
+        z-index: -1;
     }
 
-    .iconica-strelica{
+    .iconica-strelica {
         width: 10px;
         height: 10px;
-        fill:red;
+        fill: red;
     }
 
-    h1{
-        color:$color-gray-dark;
-    }
-    .main-p{
+
+
+    .main-p {
         width: 765px;
-        font-size: 1.2rem;
+        @include font-size(1.8);
     }
 }
