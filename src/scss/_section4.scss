@@ -1,11 +1,52 @@
 .section4{
     text-align: center;
     
-
-    img{
-        margin-top: 143px;
+.wraper{
+    overflow: hidden;
+    position: relative;
+      margin-top: 143px;
         margin-bottom: 68px;
+}
+  
+    .rollRed{
+       position: absolute;
+       top:0;
+       left:0;
+       right: 0;
+       bottom:0px;
+       
+        background-color: $color-text-red;
+        z-index: 22;
+        animation: rollingRed 2s forwards;
+
     }
+
+    .rollGray{
+        position: absolute;
+        top:0;
+        left:0;
+        right: 0;
+        bottom:0;
+        
+         background-color: $color-gray;
+         z-index: 15;
+        
+ 
+     }
+
+     .rollGrayAnim{
+        position: absolute;
+        top:0;
+        left:0;
+        right: 0;
+        bottom:0;
+        
+         background-color: $color-gray;
+         z-index: 15;
+          animation: rollingGray 2s forwards;
+ 
+     }
+
     .head-p{
         width: 750px;
         margin: 0 auto;
@@ -73,4 +114,22 @@
 .registracija{
     height: 85px;
     margin-bottom: 50px;
+}
+
+@keyframes rollingRed{
+    0%{     
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes rollingGray{
+    0%{     
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
 }

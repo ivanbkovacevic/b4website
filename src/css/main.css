@@ -6312,6 +6312,9 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.carousel-caption {
+  bottom: 210px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -6450,7 +6453,6 @@ body {
 .heroHeader {
   position: relative; }
   .heroHeader .main-title {
-    position: absolute;
     color: white;
     top: 225px;
     left: 130px;
@@ -6627,9 +6629,37 @@ body {
 
 .section4 {
   text-align: center; }
-  .section4 img {
+  .section4 .wraper {
+    overflow: hidden;
+    position: relative;
     margin-top: 143px;
     margin-bottom: 68px; }
+  .section4 .rollRed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-color: #e60028;
+    z-index: 22;
+    animation: rollingRed 2s forwards; }
+  .section4 .rollGray {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #aaaaaa;
+    z-index: 15; }
+  .section4 .rollGrayAnim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #aaaaaa;
+    z-index: 15;
+    animation: rollingGray 2s forwards; }
   .section4 .head-p {
     width: 750px;
     margin: 0 auto;
@@ -6681,6 +6711,18 @@ body {
 .registracija {
   height: 85px;
   margin-bottom: 50px; }
+
+@keyframes rollingRed {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(100%); } }
+
+@keyframes rollingGray {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(100%); } }
 
 .section5 {
   padding-top: 50px; }
