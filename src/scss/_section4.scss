@@ -10,6 +10,19 @@
     padding: 0 65px;
 }
 
+a{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    &:hover .iconica-strelica{
+        animation: strelica-levo-desno 0.4s forwards 3;
+      }
+}
+
+.iconica-strelica{
+    margin-left: 15px;
+}
+
 .imageSec4{
     background-image: url('../assets/img/cikasabradom.jpg') ;
     //background-color: #cccccc; /* Used if the image is unavailable */
@@ -80,6 +93,8 @@
         font-size: 1.1rem;
         text-decoration: none;
         color:$color-text-red;
+        margin-bottom: 20px;
+       
     }
 
     .iconsRow{
@@ -96,7 +111,6 @@
     padding: 33px;
     
    a{
-      
     @include font-size(1.8);
    }
   
@@ -109,6 +123,7 @@
     height: 10px;
     fill:$color-text-red;
 }
+
 .iconica-crvena{
     width: 120px;
     fill:$color-text-red;

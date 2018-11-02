@@ -35,6 +35,7 @@
         @include font-size(1.4);
         text-decoration: none;
         color:$color-text-red;
+        margin-top: auto;
         margin-bottom:70px; 
     }
     p{
@@ -42,10 +43,15 @@
         color: $color-gray-dark;
     }
 
+    a{
+        text-decoration: none;
+        &:hover .iconica-strelica{
+            animation: strelica-levo-desno 0.4s forwards 3;
+          }
+    }
     .iconica-strelica{
-        width: 10px;
-        height: 10px;
-        fill:red;
+        margin-left: 18px;
+
     }
 
    

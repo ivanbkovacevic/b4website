@@ -6313,7 +6313,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 .carousel-caption {
-  bottom: 0; }
+  bottom: 200px; }
 
 * {
   margin: 0;
@@ -6488,7 +6488,7 @@ body {
   .heroHeader a {
     text-decoration: none; }
     .heroHeader a:hover .iconica-strelica {
-      animation: strelica-levo-desno 0.4s forwards; }
+      animation: strelica-levo-desno 0.4s forwards 3; }
   .heroHeader .iconica-strelica {
     margin-left: 18px; }
   .heroHeader .button1 {
@@ -6625,10 +6625,12 @@ body {
     color: #e60028;
     border-top: 2px solid #e0dfdf;
     font-size: 1.2rem; }
+  .section3 a {
+    text-decoration: none; }
+    .section3 a:hover .iconica-strelica {
+      animation: strelica-levo-desno 0.4s forwards 3; }
   .section3 .iconica-strelica {
-    width: 10px;
-    height: 10px;
-    fill: red; }
+    margin-left: 18px; }
 
 .section4 {
   text-align: center; }
@@ -6639,6 +6641,14 @@ body {
     margin-top: 143px;
     margin-bottom: 68px;
     padding: 0 65px; }
+  .section4 a {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px; }
+    .section4 a:hover .iconica-strelica {
+      animation: strelica-levo-desno 0.4s forwards 3; }
+  .section4 .iconica-strelica {
+    margin-left: 15px; }
   .section4 .imageSec4 {
     background-image: url("../assets/img/cikasabradom.jpg");
     height: 580px;
@@ -6695,7 +6705,8 @@ body {
   .section4 a {
     font-size: 1.1rem;
     text-decoration: none;
-    color: #e60028; }
+    color: #e60028;
+    margin-bottom: 20px; }
   .section4 .iconsRow {
     padding: 0 118px; }
   .section4 .iconsCol {
@@ -6765,9 +6776,19 @@ body {
     margin-top: 264px;
     width: 960px;
     padding-bottom: 20px; }
+  .section5 .imageDiv {
+    background-image: url("../assets/img/sittingpeople1.jpg");
+    height: 880px;
+    /* You must set a specified height */
+    background-position: bottom;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: 900px 700px;
+    /* Resize the background image to cover the entire container */ }
   .section5 .redBox2 {
     position: absolute;
-    top: 200px;
+    top: 70px;
     left: 290px;
     width: 865px;
     height: 375px;
@@ -6852,15 +6873,18 @@ body {
     font-size: 1.4rem;
     text-decoration: none;
     color: #e60028;
+    margin-top: auto;
     margin-bottom: 70px; }
   .section6 p {
     font-size: 14px;
     font-size: 1.4rem;
     color: #5e5b5b; }
+  .section6 a {
+    text-decoration: none; }
+    .section6 a:hover .iconica-strelica {
+      animation: strelica-levo-desno 0.4s forwards 3; }
   .section6 .iconica-strelica {
-    width: 10px;
-    height: 10px;
-    fill: red; }
+    margin-left: 18px; }
 
 @keyframes apear {
   0% {
@@ -7091,17 +7115,9 @@ body {
       display: block;
       color: #e60028; }
       .section8 .section8row .mainLink:hover .iconica-strelica {
-        animation: strelica-levo-desno 0.3s forwards; }
+        animation: strelica-levo-desno 0.4s forwards 3; }
     .section8 .section8row .iconica-strelica {
-      margin-left: 8px; }
-
-@keyframes strelica-levo-desno {
-  0% {
-    transform: translateX(0px); }
-  50% {
-    transform: translateX(20px); }
-  100% {
-    transform: translateX(0px); } }
+      margin-left: 18px; }
 
 footer {
   display: flex;
@@ -7112,3 +7128,14 @@ footer {
   color: #aaaaaa; }
   footer .foterItems {
     display: inline-block; }
+
+.testCon {
+  background-color: green;
+  height: 100px;
+  margin-bottom: 100px;
+  padding: 50px; }
+  .testCon .test {
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    margin: auto; }

@@ -51,10 +51,17 @@
       
     }
 
-     .iconica-strelica{
-        width: 10px;
-        height: 10px;
-        fill:red;
+    a{
+        text-decoration: none;
+
+        &:hover .iconica-strelica{
+            animation: strelica-levo-desno 0.4s forwards 3;
+          }
+    }
+
+    .iconica-strelica{
+        margin-left: 18px;
+  
     }
 
 

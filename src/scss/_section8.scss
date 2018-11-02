@@ -50,27 +50,19 @@
             display: block;
             color:$color-text-red;
 
-            &:hover  .iconica-strelica{          
-                    animation: strelica-levo-desno 0.3s forwards;           
-                      }
-     
+           
+            &:hover .iconica-strelica{
+                animation: strelica-levo-desno 0.4s forwards 3;
+              }
         }
 
+     
+    
         .iconica-strelica{
-           margin-left: 8px;
-    }
+            margin-left: 18px;
+      
+        }
 }
 
 }
 
-@keyframes strelica-levo-desno{
-    0%{
-        transform: translateX(0px);
-    }
-    50%{
-        transform: translateX(20px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}

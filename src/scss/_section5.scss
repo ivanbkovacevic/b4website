@@ -41,9 +41,18 @@
 
     }
 
+    .imageDiv{
+        background-image: url('../assets/img/sittingpeople1.jpg') ;
+    //background-color: #cccccc; /* Used if the image is unavailable */
+    height: 880px; /* You must set a specified height */
+    background-position: bottom; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 900px 700px; /* Resize the background image to cover the entire container */
+    }
+
     .redBox2 {
         position: absolute;
-        top: 200px;
+        top: 70px;
         left: 290px;
         width: 865px;
         height: 375px;

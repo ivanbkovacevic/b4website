@@ -10,4 +10,20 @@ footer {
         display: inline-block;
 
     }
+
+  
+}
+.testCon{
+    background-color: green;
+    height: 100px;
+    margin-bottom: 100px;
+    padding: 50px;
+
+    .test{
+        background-color: red;
+        width: 100px;
+        height: 30px;
+        margin:auto;
+      
+    }
 }

@@ -1,19 +1,39 @@
 $(document).ready(function(){
-    var myInt=null;
+    var myInt1=null;
+    var myInt2=null;
+    var myInt3=null;
     $('.scroll').on('click', function() { 
-       
-        var x=1000;
-        var y=1230;
-        var z=1653;
-         myInt= setInterval(myCounter,10);
-        function myCounter(){
-            x+=23;
-            y+=36;
-            z+=45;
-            $('#broj1').text(x);              
-            $('#broj2').text(y);              
-            $('#broj3').text(z);              
-        } 
+        var x1=1000;
+         myInt1= setInterval(myCounter1,8);
+        function myCounter1(){
+            x1+=23;
+            if(x1>7234 ){
+                clearInterval(myInt1);
+            }
+            $('#broj1').text(x1);                          
+        }
+
+        var x2=1000;
+        myInt2= setInterval(myCounter2,8);
+       function myCounter2(){
+           x2+=33;
+           if(x2>4234 ){
+               clearInterval(myInt2);
+           }
+           $('#broj2').text(x2);                          
+       }
+
+       var x3=1000;
+       myInt3= setInterval(myCounter3,8);
+      function myCounter3(){
+          x3+=43;
+          if(x3>5234 ){
+              clearInterval(myInt3);
+          }
+          $('#broj3').text(x3);                          
+      }
+        
+        
 
         $('html, body').animate({scrollTop: $(this.hash).offset().top - 330}, 1000);
         return false;
@@ -26,9 +46,6 @@ $(document).ready(function(){
         var scroll=$(window).scrollTop();
            console.log(scroll);
 
-           if(scroll >= 915){
-            clearInterval(myInt);
-        }
             if(scroll >= 1299 ){
                 $('#rollRed').addClass("rollRed");
                 $('#rollGray').addClass("rollGrayAnim");
