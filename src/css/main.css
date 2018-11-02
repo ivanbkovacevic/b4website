@@ -6764,6 +6764,11 @@ body {
 
 .section6 {
   border-top: 2px solid #aaaaaa; }
+  .section6 .hidden {
+    opacity: 0; }
+  .section6 .apear {
+    opacity: 0;
+    animation: apear 2.5s forwards; }
   .section6 h1 {
     text-align: center;
     margin-top: 75px;
@@ -6798,6 +6803,12 @@ body {
     height: 10px;
     fill: red; }
 
+@keyframes apear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .section7 h3 {
   font-size: 23px;
   font-size: 2.3rem; }
@@ -6806,6 +6817,9 @@ body {
   font-size: 18px;
   font-size: 1.8rem;
   margin-bottom: 38px; }
+
+.section7 .myForm {
+  display: inline-block; }
 
 .section7 .inputInform {
   float: left;
@@ -6816,8 +6830,22 @@ body {
   font-size: 1.5rem;
   color: #e0dfdf; }
 
-.section7 .myForm {
-  display: inline-block; }
+.section7 .myForm2 {
+  display: none;
+  padding: 30px; }
+  .section7 .myForm2 input {
+    margin: 8px;
+    width: 600px;
+    height: 40px;
+    text-indent: 20px;
+    font-size: 1.5rem;
+    color: #aaaaaa;
+    outline: none;
+    border-width: 0;
+    border-bottom: none;
+    transition: all 0.4s ease-in-out; }
+    .section7 .myForm2 input:focus {
+      border-bottom: 2px solid green; }
 
 .section7 .bdtInform {
   float: left;

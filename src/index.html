@@ -66,17 +66,7 @@
             </div>
           </nav>
     
-            <!-- <div class="main-title">
-              <div id="title1" class="title1 sliding1">SOGE LIZING AKCIJA</div>
-              <div  id="title2" class="title2 sliding2">Dacia finansiranje</div>
-              <div  id="title3" class="title3 sliding3">Novi uslovi finansiranja vaze za nova DACIA PUTNICKA I DOSTAVNA vozila do 01.04.2016.
-                Proverite ya[to smo najbolji</div>
-              <a href="#">
-                <div  id="title4" class="button1 sliding4">Pogledaj akciju <svg class="iconica-strelica">
-                  <use xlink:href="sprite.svg#icon-arrow"></use>
-                </svg></div>
-              </a>
-            </div> -->
+        
             <a href="#section3" class="scroll"><button id="section3show" class="button2"><svg class="iconica-strelica-dugme">
                 <use xlink:href="sprite.svg#icon-arrow"></use>
               </svg> </button></a>
@@ -256,7 +246,7 @@
   <section class="container section6">
       <h1>Magazin Finovacije</h1>
       <div class="row">
-        <div class="col-lg-4">
+        <div id="sec6-col1" class="col-lg-4 hidden">
           <h6>ONLINE KREDIT</h6>
           <img src='assets/img/magazin1.jpg' alt='magazin1'>
           <h4>Zašto je strpljenje jedna od ključnih karakteristika dobrog </h4>
@@ -266,7 +256,7 @@
                 <use xlink:href="sprite.svg#icon-arrow"></use>
               </svg></a>
         </div>
-        <div class="col-lg-4">
+        <div id="sec6-col2" class="col-lg-4 hidden">
             <h6>ONLINE KREDIT</h6>
             <img src='assets/img/magazin2.jpg' alt='magazin2'>
             <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
@@ -276,7 +266,7 @@
                   <use xlink:href="sprite.svg#icon-arrow"></use>
                 </svg></a>
           </div>
-          <div class="col-lg-4">
+          <div id="sec6-col3" class="col-lg-4 hidden">
               <h6>ONLINE KREDIT</h6>
               <img src='assets/img/magazin3.jpg' alt='magazin3'>
               <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
@@ -305,8 +295,16 @@
             <h3>Imate pitanja za nas?</h3>
             <p>Razgovarajte sa nama! Pitajte, sugerišite, recite šta mislite, preporučite - 
               odgovor će vas vrlo brzo sačekati u vašem inboksu.</p>
-            <button class="btn btn-outline-danger btnPitanjeZaNas">PISITE NAM</button>
-          </div>
+            <button id="pisiteNam" class="btn btn-outline-danger btnPitanjeZaNas">PISITE NAM</button>
+            <div id="myForm2" class="myForm2">
+              <form>
+                <input class="inputQuestion" type="text" placeholder="Ime">
+                <input class="inputQuestion" type="text" placeholder="Prezime">
+                <input class="inputQuestion" type="email" placeholder="Tvoja email adresa">
+              </form>
+            </div>
+            
+          </div>   
         </div>
   </section>
 

@@ -1,6 +1,13 @@
 .section6{
 
     border-top: 2px solid $color-gray;
+.hidden{
+    opacity: 0;
+}
+    .apear{
+        opacity: 0;
+        animation: apear 2.5s forwards;
+    }
 
     h1{
         text-align: center;
@@ -41,4 +48,13 @@
     }
 
    
+}
+
+@keyframes apear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

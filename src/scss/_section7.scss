@@ -9,6 +9,10 @@
         margin-bottom: 38px;
     }
 
+    .myForm {
+        display: inline-block;
+    }
+
     .inputInform {
         float: left;
         width: 636px;
@@ -19,10 +23,29 @@
 
     }
 
-    .myForm {
-        display: inline-block;
+    .myForm2 {
+        display: none;
+        padding: 30px;
 
+         input{
+            margin: 8px;
+            width: 600px;
+            height: 40px;
+            text-indent: 20px;
+            font-size: 1.5rem;
+            color: $color-gray;
+            outline: none;
+            border-width: 0;
+            border-bottom:none;
+            transition: all 0.4s ease-in-out;
+
+            &:focus{
+                border-bottom: 2px solid green;
+              
+                    }
+        }
     }
+
 
     .bdtInform {
        float: left;
