@@ -4,8 +4,20 @@
 .wraper{
     overflow: hidden;
     position: relative;
-      margin-top: 143px;
-        margin-bottom: 68px;
+    height: 590px;
+    margin-top: 143px;
+    margin-bottom: 68px;
+    padding: 0 65px;
+}
+
+.imageSec4{
+    background-image: url('../assets/img/cikasabradom.jpg') ;
+    //background-color: #cccccc; /* Used if the image is unavailable */
+    height: 580px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+   
 }
   
     .rollRed{
@@ -13,8 +25,7 @@
        top:0;
        left:0;
        right: 0;
-       bottom:0px;
-       
+       bottom:0px;  
         background-color: $color-text-red;
         z-index: 22;
         animation: rollingRed 2s forwards;
@@ -27,11 +38,8 @@
         left:0;
         right: 0;
         bottom:0;
-        
          background-color: $color-gray;
          z-index: 15;
-        
- 
      }
 
      .rollGrayAnim{
@@ -74,8 +82,12 @@
         color:$color-text-red;
     }
 
-    .icons{
-        margin-bottom: 43px;
+    .iconsRow{
+       padding: 0 118px;
+    }
+
+    .iconsCol{
+        padding-right: 150px;
     }
 
 .bottomRow{

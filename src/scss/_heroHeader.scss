@@ -2,6 +2,7 @@
 .heroHeader{
   
     position: relative;
+   
 
     .main-title{
        
@@ -53,12 +54,10 @@
 
     .iconica-strelica{
         margin-left: 18px;
-
-        
+  
     }
 
-    .button1{
-      
+    .button1{ 
         background:white;
         border-radius: 30px;
         width: 185px;
@@ -69,13 +68,10 @@
         padding-top: 18px;
         padding-bottom: 18px;
         font-weight: bold;
-       
-     
     }
 
     .button2{
         position: absolute;
-      
         height: 45px;
         width: 45px;
         background:white;
@@ -96,6 +92,8 @@
             fill:$color-text-red;
         }
     }
+
+  
 
     ol{
         width: 50px;

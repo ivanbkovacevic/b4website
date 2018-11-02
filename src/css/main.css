@@ -6313,7 +6313,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 .carousel-caption {
-  bottom: 210px; }
+  bottom: 0; }
 
 * {
   margin: 0;
@@ -6616,8 +6616,11 @@ body {
     font-size: 9.3rem;
     font-weight: 100;
     color: #e60028; }
-  .section3 .brojevi {
-    margin-bottom: 60px; }
+  .section3 .brojeviRow {
+    margin-bottom: 60px;
+    padding: 0 110px; }
+  .section3 .brojeviCol {
+    padding: 0 122px; }
   .section3 .bottomRow {
     color: #e60028;
     border-top: 2px solid #e0dfdf;
@@ -6632,8 +6635,20 @@ body {
   .section4 .wraper {
     overflow: hidden;
     position: relative;
+    height: 590px;
     margin-top: 143px;
-    margin-bottom: 68px; }
+    margin-bottom: 68px;
+    padding: 0 65px; }
+  .section4 .imageSec4 {
+    background-image: url("../assets/img/cikasabradom.jpg");
+    height: 580px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */ }
   .section4 .rollRed {
     position: absolute;
     top: 0;
@@ -6681,8 +6696,10 @@ body {
     font-size: 1.1rem;
     text-decoration: none;
     color: #e60028; }
-  .section4 .icons {
-    margin-bottom: 43px; }
+  .section4 .iconsRow {
+    padding: 0 118px; }
+  .section4 .iconsCol {
+    padding-right: 150px; }
   .section4 .bottomRow {
     color: #e60028;
     border-top: 1px solid gray;
@@ -6725,7 +6742,11 @@ body {
     transform: translateX(100%); } }
 
 .section5 {
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-left: 90px; }
+  .section5 .wraper3 {
+    animation: movingUp 0.6s forwards;
+    margin-top: 330px; }
   .section5 a {
     display: block;
     font-size: 18px;
@@ -6737,7 +6758,6 @@ body {
     font-size: 18px;
     font-size: 1.8rem; }
   .section5 h1 {
-    margin-top: 330px;
     font-size: 42px;
     font-size: 4.2rem;
     color: #5e5b5b; }
@@ -6745,14 +6765,32 @@ body {
     margin-top: 264px;
     width: 960px;
     padding-bottom: 20px; }
-  .section5 .redBox {
+  .section5 .redBox2 {
     position: absolute;
     top: 200px;
-    left: 150px;
+    left: 290px;
     width: 865px;
     height: 375px;
     background-color: red;
-    z-index: -1; }
+    z-index: -1;
+    animation: rollingRed2 2s forwards; }
+  .section5 .rollGray2 {
+    position: absolute;
+    top: 22.5%;
+    left: 15px;
+    right: -122px;
+    bottom: 22%;
+    background-color: #aaaaaa;
+    z-index: 15; }
+  .section5 .rollGrayAnim2 {
+    position: absolute;
+    top: 22.5%;
+    left: 15px;
+    right: -122px;
+    bottom: 22%;
+    background-color: #aaaaaa;
+    z-index: 15;
+    animation: rollingGray2 2s forwards; }
   .section5 .iconica-strelica {
     width: 10px;
     height: 10px;
@@ -6762,8 +6800,29 @@ body {
     font-size: 18px;
     font-size: 1.8rem; }
 
+@keyframes rollingRed2 {
+  0% {
+    transform: translateX(130%); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes rollingGray2 {
+  0% {
+    right: -122px; }
+  100% {
+    right: 1199px; } }
+
+@keyframes movingUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 .section6 {
-  border-top: 2px solid #aaaaaa; }
+  border-top: 2px solid #aaaaaa;
+  padding: 0 120px; }
   .section6 .hidden {
     opacity: 0; }
   .section6 .apear {
@@ -6809,97 +6868,247 @@ body {
   100% {
     opacity: 1; } }
 
-.section7 h3 {
-  font-size: 23px;
-  font-size: 2.3rem; }
-
-.section7 p {
-  font-size: 18px;
-  font-size: 1.8rem;
-  margin-bottom: 38px; }
-
-.section7 .myForm {
-  display: inline-block; }
-
-.section7 .inputInform {
-  float: left;
-  width: 636px;
-  height: 50px;
-  text-indent: 20px;
-  font-size: 15px;
-  font-size: 1.5rem;
-  color: #e0dfdf; }
-
-.section7 .myForm2 {
-  display: none;
-  padding: 30px; }
-  .section7 .myForm2 input {
-    margin: 8px;
-    width: 600px;
-    height: 40px;
+.section7 {
+  width: 100%; }
+  .section7 #closeForm {
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    margin-left: 315px; }
+  .section7 h3 {
+    font-size: 23px;
+    font-size: 2.3rem; }
+  .section7 p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-bottom: 38px; }
+  .section7 .myForm {
+    display: inline-block; }
+  .section7 .inputInform {
+    float: left;
+    width: 636px;
+    height: 50px;
     text-indent: 20px;
+    font-size: 15px;
     font-size: 1.5rem;
-    color: #aaaaaa;
-    outline: none;
-    border-width: 0;
-    border-bottom: none;
-    transition: all 0.4s ease-in-out; }
-    .section7 .myForm2 input:focus {
-      border-bottom: 2px solid green; }
+    color: #e0dfdf; }
+  .section7 .myForm2 {
+    display: none;
+    padding-top: 50px;
+    position: relative;
+    /* The container */
+    /* Hide the browser's default checkbox */
+    /* Create a custom checkbox */
+    /* Create the checkmark/indicator (hidden when not checked) */
+    /* Show the checkmark when checked */
+    /* Style the checkmark/indicator */ }
+    .section7 .myForm2 .movingLabel {
+      display: none;
+      position: absolute;
+      left: 50px;
+      font-size: 1.5rem; }
+    .section7 .myForm2 .emailQuestion {
+      position: absolute;
+      left: 50px;
+      font-size: 1.5rem;
+      opacity: 0.3;
+      top: 66px;
+      animation: LabelMoveUp 0.3s forwards; }
+    .section7 .myForm2 .pitanje {
+      position: absolute;
+      left: 50px;
+      font-size: 1.5rem;
+      opacity: 0.3;
+      top: 146px;
+      transition: all 0.3s;
+      animation: LabelMoveUp 0.3s forwards; }
+    .section7 .myForm2 .container {
+      display: block;
+      position: relative;
+      padding-left: 20px;
+      margin: 0;
+      margin-bottom: 10px;
+      width: 100%;
+      text-align: start;
+      cursor: pointer;
+      font-size: 1.3rem;
+      color: #5e5b5b;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      .section7 .myForm2 .container a {
+        display: inline;
+        text-decoration-line: underline;
+        color: #aaaaaa;
+        margin-left: 5px; }
+    .section7 .myForm2 .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+    .section7 .myForm2 .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 15px;
+      width: 15px;
+      background-color: #eee;
+      border: 1px solid green; }
+    .section7 .myForm2 .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .section7 .myForm2 .container input:checked ~ .checkmark:after {
+      display: block; }
+    .section7 .myForm2 .container .checkmark:after {
+      left: 5px;
+      top: -2px;
+      width: 7px;
+      height: 12px;
+      border: solid #e60028;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .section7 .myForm2 input {
+      margin: 20px;
+      width: 600px;
+      height: 40px;
+      text-indent: 20px;
+      font-size: 1.5rem;
+      color: #aaaaaa;
+      outline: none;
+      border-width: 0;
+      border-bottom: none;
+      transition: all 0.4s ease-in-out; }
+      .section7 .myForm2 input:focus {
+        border-bottom: 2px solid #e60028; }
+  .section7 .bdtInform {
+    float: left;
+    background-color: #e60028;
+    width: 182px;
+    height: 50px;
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    font-size: 14px;
+    font-size: 1.4rem; }
+  .section7 .bdtInformContainer {
+    padding: 66px;
+    background-color: #e0dfdf; }
+  .section7 .pitanjeZaNas {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #aaaaaa; }
+    .section7 .pitanjeZaNas h3 {
+      font-size: 24px;
+      font-size: 2.4rem; }
+    .section7 .pitanjeZaNas p {
+      font-size: 17px;
+      font-size: 1.7rem; }
+  .section7 .btnPitanjeZaNas {
+    border: 2px solid #e60028;
+    padding: 20px 100px;
+    color: #5e5b5b;
+    font-size: 14px;
+    font-size: 1.4rem; }
+    .section7 .btnPitanjeZaNas:hover {
+      color: white; }
+  .section7 .posalji {
+    margin-left: 200px;
+    width: 152px;
+    height: 40px;
+    padding: 5px 20px; }
+  .section7 a {
+    margin-left: auto;
+    width: 50px; }
+  .section7 .dugme3 {
+    margin: 0 auto;
+    height: 45px;
+    width: 45px;
+    background: white;
+    border-radius: 100%;
+    z-index: 22;
+    color: #e60028; }
+    .section7 .dugme3:hover .iconica-strelica-dugme3 {
+      animation: strelica-gore-dole 0.4s forwards; }
+    .section7 .dugme3 .iconica-strelica-dugme3 {
+      transform: rotate(-90deg);
+      height: 16px;
+      width: 16px;
+      fill: #e60028; }
 
-.section7 .bdtInform {
-  float: left;
-  background-color: #e60028;
-  width: 182px;
-  height: 50px;
-  border: none;
-  color: white;
-  padding: 15px 50px;
-  font-size: 14px;
-  font-size: 1.4rem; }
+@keyframes LabelMoveUp {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translateY(-20px); } }
 
-.section7 .bdtInformContainer {
-  padding: 66px;
-  background-color: #e0dfdf; }
+@keyframes strelica-gore-dole {
+  0% {
+    transform: translateY(0px) rotate(-90deg); }
+  50% {
+    transform: translateY(-20px) rotate(-90deg); }
+  100% {
+    transform: translateX(0px) rotate(-90deg); } }
 
-.section7 .pitanjeZaNas {
-  background-color: #f2f2f2;
-  border-bottom: 2px solid #aaaaaa; }
-  .section7 .pitanjeZaNas h3 {
-    font-size: 24px;
-    font-size: 2.4rem; }
-  .section7 .pitanjeZaNas p {
-    font-size: 17px;
-    font-size: 1.7rem; }
-
-.section7 .btnPitanjeZaNas {
-  border: 2px solid #e60028;
-  padding: 20px 100px;
-  color: #5e5b5b;
-  font-size: 14px;
-  font-size: 1.4rem; }
-
-.myFooter {
-  color: #aaaaaa; }
-  .myFooter h6 {
+.section8 {
+  color: #aaaaaa;
+  padding-left: 60px; }
+  .section8 .section8Col {
+    padding-bottom: 50px; }
+    .section8 .section8Col a {
+      display: inline-block;
+      font-size: 14px;
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: #aaaaaa;
+      margin-bottom: 35px; }
+  .section8 h6 {
     margin-top: 90px;
     margin-bottom: 65px;
     font-size: 13px;
     font-size: 1.3rem; }
-  .myFooter a {
-    font-size: 14px;
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: #aaaaaa;
-    margin-bottom: 35px; }
-  .myFooter .iconice-sive {
+  .section8 .iconice-sive {
     border: 1px solid blue;
     width: 100%; }
-    .myFooter .iconice-sive a {
+    .section8 .iconice-sive a {
       margin-bottom: 0;
       display: inline-block; }
-    .myFooter .iconice-sive .iconica {
+    .section8 .iconice-sive .iconica {
       display: inline-block;
       width: 10px;
       height: 10px;
       margin-bottom: 0; }
+  .section8 .section8row {
+    height: 80px;
+    width: 50%;
+    padding-top: 20px; }
+    .section8 .section8row .mainLink {
+      display: block;
+      color: #e60028; }
+      .section8 .section8row .mainLink:hover .iconica-strelica {
+        animation: strelica-levo-desno 0.3s forwards; }
+    .section8 .section8row .iconica-strelica {
+      margin-left: 8px; }
+
+@keyframes strelica-levo-desno {
+  0% {
+    transform: translateX(0px); }
+  50% {
+    transform: translateX(20px); }
+  100% {
+    transform: translateX(0px); } }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  border-top: 1px solid #aaaaaa;
+  padding: 23px 60px;
+  color: #aaaaaa; }
+  footer .foterItems {
+    display: inline-block; }
