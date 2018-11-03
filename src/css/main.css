@@ -6315,6 +6315,14 @@ a.text-dark:hover, a.text-dark:focus {
 .carousel-caption {
   bottom: 200px; }
 
+@keyframes strelica-gore-dole {
+  0% {
+    transform: translateY(0px) rotate(-90deg); }
+  50% {
+    transform: translateY(-20px) rotate(-90deg); }
+  100% {
+    transform: translateX(0px) rotate(-90deg); } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -6357,98 +6365,38 @@ body {
   font-family: HelveticaNeue;
   src: url(../assets/HelveticaNeue.otf); }
 
-.left {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex: 1 0 50%; }
-
-.right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1 0 50%;
-  padding: 0 20px; }
-  .right .language {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex: 1 0 auto; }
-    .right .language .eng {
-      margin: 3px; }
-    .right .language .eng:hover {
-      color: red;
-      font-weight: bold; }
-    .right .language .srb {
-      margin: 3px; }
-    .right .language .srb:hover {
-      color: red;
-      font-weight: bold; }
-  .right .predmeti {
-    justify-content: space-between;
-    flex: 3 0 auto; }
-
-.iconice {
-  margin: 5px;
-  width: 11px;
-  opacity: 0.5; }
-
-.key {
-  transform: rotate(45deg);
-  margin-right: 15px; }
-
-.val {
-  width: 25px; }
-
-.pin {
-  margin-right: 10px; }
-
 .top-header {
+  float: left;
   font-size: 12px;
   font-weight: bold;
-  padding-top: 10px;
+  padding: 10px 30px;
   height: 40px;
   background: #f2f2f2; }
-
-.firstCol {
-  padding-left: 50px; }
-  .firstCol a {
+  .top-header a {
+    display: inline-block;
+    margin: 0 auto;
     text-decoration: none;
     color: #aaaaaa; }
-
-#top-header-kontakt {
-  margin-left: 30px; }
-
-.secondCol {
-  padding: 0; }
-  .secondCol a {
-    text-decoration: none;
-    color: #aaaaaa; }
-
-#top-header-kursna-lista {
-  margin-left: 30px; }
-
-.thirdCol {
-  padding: 0; }
-  .thirdCol a {
-    text-decoration: none;
-    color: #aaaaaa; }
-
-.fourtCol {
-  padding-left: 120px; }
-  .fourtCol .eng {
-    margin: 3px; }
-  .fourtCol .eng:hover {
-    color: red;
-    font-weight: bold; }
-  .fourtCol .srb {
-    margin: 3px; }
-  .fourtCol .srb:hover {
-    color: red;
-    font-weight: bold; }
-  .fourtCol a {
-    text-decoration: none;
-    color: #aaaaaa; }
+    .top-header a .eng {
+      margin: 13px; }
+      .top-header a .eng:hover {
+        color: red;
+        font-weight: bold; }
+    .top-header a .srb {
+      margin: 3px; }
+      .top-header a .srb:hover {
+        color: red;
+        font-weight: bold; }
+  .top-header .iconice-sive {
+    margin: 5px;
+    width: 11px;
+    height: 11px;
+    opacity: 0.5; }
+  .top-header .val {
+    width: 25px; }
+  .top-header .key {
+    transform: rotate(45deg);
+    margin-right: 15px; }
 
 .heroHeader {
   position: relative; }
@@ -7128,6 +7076,16 @@ footer {
   color: #aaaaaa; }
   footer .foterItems {
     display: inline-block; }
+  footer a {
+    text-decoration: none;
+    font-size: 1.5rem; }
+    footer a:svg {
+      animation: strelica-gore-dole 0.4s forwards 3; }
+  footer svg {
+    margin-left: 18px;
+    fill: red;
+    width: 12px;
+    height: 12px; }
 
 .testCon {
   background-color: green;

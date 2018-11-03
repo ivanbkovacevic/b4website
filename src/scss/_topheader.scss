@@ -24,163 +24,48 @@
 }
 
 
-
-.left {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    // border: 1px solid red;
-    flex: 1 0 50%;
-
-
-    // a {
-    //     text-decoration: none;
-    //     color:$color-gray;
-    // }
-}
-
-.right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // border: 1px solid blue;
-    flex: 1 0 50%;
-    padding: 0 20px;
-
-    // //    a {
-    // //     text-decoration: none;
-    // //     color:$color-gray;
-    // }
-
-    .language {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        // border: 1px solid red;
-        flex: 1 0 auto;
-
-        .eng {
-            margin: 3px;
-        }
-
-        .eng:hover {
-            color: red;
-            font-weight: bold;
-
-        }
-
-        .srb {
-            margin: 3px;
-        }
-
-        .srb:hover {
-            color: red;
-            font-weight: bold;
-        }
-    }
-
-    .predmeti {
-        justify-content: space-between;
-        // border: 3px solid violet;
-        flex: 3 0 auto;
-    }
-}
-
-
-.iconice {
-    margin: 5px;
-    width: 11px;
-    opacity: 0.5;
-
-}
-
-.key {
-    transform: rotate(45deg);
-    margin-right: 15px;
-}
-
-.val {
-    width: 25px;
-}
-
-.pin {
-    margin-right: 10px;
-}
-
-
-
 //////////////////////////////////////////////////////////////
 .top-header {
+    float: left;
     font-size: 12px;
     font-weight: bold;
-    padding-top: 10px;
+    padding: 10px 30px;
     height: 40px;
     background: $color-back;
 
-}
-
-.firstCol {
-    padding-left: 50px;
-
     a {
-        text-decoration: none;
-        color: $color-gray;
-    }
-}
+        display: inline-block;
+        margin: 0 auto;
+        @include topHeader-a;
 
-#top-header-kontakt {
-    margin-left: 30px;
-}
-
-.secondCol {
-    padding: 0;
-
-    a {
-        text-decoration: none;
-        color: $color-gray;
-    }
-}
-
-
-#top-header-kursna-lista {
-    margin-left: 30px;
-}
-
-.thirdCol {
-    padding: 0;
-
-    a {
-        text-decoration: none;
-        color: $color-gray;
-    }
-}
-
-.fourtCol {
-
-   
-
-    padding-left: 120px;
-
-    .eng {
-        margin: 3px;
-    }
-
-    .eng:hover {
-        color: red;
-        font-weight: bold;
-    }
-
-    .srb {
-        margin: 3px;
-    }
-
-    .srb:hover {
-        color: red;
-        font-weight: bold;
-    }
-
-    a {
-        text-decoration: none;
-        color: $color-gray;
-    }
+        .eng {
+            margin: 13px;
+            
+        &:hover {
+            color: red;
+            font-weight: bold;
+        }
+        }
+        .srb {
+            margin: 3px;
+            &:hover {
+                color: red;
+                font-weight: bold;
+            }
+        }
+     }
+ 
+     .iconice-sive{
+        margin: 5px;
+        width: 11px;
+        height: 11px;
+        opacity: 0.5;
+     }
+     .val{
+        width: 25px;
+     }
+    .key{
+            transform: rotate(45deg);
+            margin-right: 15px;
+        } 
 }
