@@ -14,6 +14,8 @@
 
     p{
         @include font-size(1.4);
+        min-height: 100px;
+        border: 1px solid green;
     }
 
     a{
@@ -39,21 +41,18 @@
         padding: 0 110px;
     }
 
-    .brojeviCol{
-      
-        padding: 0 122px;
+    .brojeviCol{  
+        padding: 0 12px;
     }
 
     .bottomRow{
         color:$color-text-red;
         border-top: 2px solid $color-gray-light;
         font-size: 1.2rem;
-      
     }
 
     a{
         text-decoration: none;
-
         &:hover .iconica-strelica{
             animation: strelica-levo-desno 0.4s forwards 3;
           }
@@ -61,10 +60,6 @@
 
     .iconica-strelica{
         margin-left: 18px;
-  
     }
-
-
-
 }
 

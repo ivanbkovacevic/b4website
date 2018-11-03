@@ -16,8 +16,8 @@
 <body>
   <!-- d-none d-md-block -->
    <!-- TOP HEADER ####################################################### -->
-  <div class="row  top-header">
-    <div class='col'>
+  <div class="row d-none d-md-block top-header">
+    <div class='col d-flex justify-content-around'>
       <a href="#">SOGE LIZING</a>
       <a href="#" id='top-header-kontakt'>KONTAKT</a>
    
@@ -31,16 +31,18 @@
       <a href="#"> <svg class="iconice-sive key">
         <use xlink:href="sprite.svg#icon-key"></use>
       </svg>PREDMETI LIZINGA U PONUDI</a>
-   
-      <a href="#" class="eng">ENG</a><span>|</span>
-      <a href="#" class="srb">SRB</a>
+   <div>
+    <a href="#" class="eng">ENG</a><span> | </span>
+    <a href="#" class="srb">SRB</a>
+   </div>
+     
     </div>
   </div>
 
    <!-- SECTION HERO HEADER####################################################### -->
    
   <section id="heroHeader" class="heroHeader">
-
+       <!-- NAVBAR ####################################################### -->
     <nav class="navbar navbar-expand-md">
       <a class="navbar-brand" href="#"> <svg class="iconica-brand">
           <use xlink:href="sprite.svg#icon-logo_b"></use>
@@ -68,7 +70,6 @@
             <a class="nav-link" href="#">Podrska</a>
           </li>
         </ul>
-
       </div>
     </nav>
 
@@ -164,18 +165,18 @@
       perspiciatis!</p>
 
     <div class="row d-flex align-items-start brojeviRow ">
-      <div class="col-lg-4 col-md-6 col-sm-8 text-center brojeviCol">
+      <div class="col-lg-4 col-md-6 col-sm-8  brojeviCol">
         <h2 id="broj1" class="broj">1000</h2>
         <h6>NETO VREDNOST PREDMETA</h6>
         <p class="text-muted">Što predstavlja 15% od ukupne vrednosti neto predmeta lizinga u Srbiji. </p>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-8 text-center brojeviCol">
+      <div class="col-lg-4 col-md-6 col-sm-8  brojeviCol">
         <h2 id="broj2" class="broj">1230</h2>
         <h6>BROJ UGOVORA</h6>
         <p class="text-muted">Što predstavlja 15% od ukupnog broja
           ugovora lizinga u Srbiji </p>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-8 text-center brojeviCol">
+      <div class="col-lg-4 col-md-6 col-sm-8  brojeviCol">
         <h2 id="broj3" class="broj">1653</h2>
         <h6>BROJ AKTIVNOH UGOVORA</h6>
         <p class="text-muted">Što predstavlja 143m eur bilasna aktiva ???</p>
@@ -206,16 +207,16 @@
     <div class="row iconsRow">
 
       <div class="col-lg-4 col-md-6 col-sm-8 text-left iconsCol">
-        <svg class="iconica-crvena lizing">
-          <use xlink:href="sprite.svg#icon-lizing"></use>
-        </svg>
-        <h3>Lizing</h3>
-        <p>Zaboravite na dugačak i zamoran proces obrade zahteva. Kod nas ćete odgovor dobiti u roku od 48 sati, a naši
-          agenti su vam u svakom trenutku na raspolaganju za pomoć i odgovore na eventualna pitanja. </p>
-          <a href='#'>Saznajte više o našoj podršci
-            <svg class="iconica-strelica">
-              <use xlink:href="sprite.svg#icon-arrow"></use>
-            </svg></a>
+            <svg class="iconica-crvena lizing">
+                <use xlink:href="sprite.svg#icon-lizing"></use>
+              </svg>
+              <h3>Lizing</h3>
+              <p>Zaboravite na dugačak i zamoran proces obrade zahteva. Kod nas ćete odgovor dobiti u roku od 48 sati, a naši
+                agenti su vam u svakom trenutku na raspolaganju za pomoć i odgovore na eventualna pitanja. </p>
+                <a href='#'>Saznajte više o našoj podršci
+                  <svg class="iconica-strelica">
+                    <use xlink:href="sprite.svg#icon-arrow"></use>
+                  </svg></a>     
       </div>
       <div class="col-lg-4 col-md-6 col-sm-8 text-left iconsCol">
         <svg class="iconica-crvena osiguranje">
@@ -363,7 +364,7 @@
             <button id="posalji" type="submit" class="btn btn-outline-danger btnPitanjeZaNas posalji">POSALJI</button>
           </form>
 
-          <p id="closeForm">Zatvori<svg class="iconice">
+          <p id="closeForm">Zatvori<svg class="iconice-sive">
               <use xlink:href="sprite.svg#icon-close"></use>
             </svg></p>
           <hr>

@@ -7,9 +7,7 @@
     margin-top: 10px;
     margin-left: 315px;
 }
-    h3 {
-        @include font-size(2.3);
-    }
+    h3 { @include font-size(2.3);}
 
     p {
         @include font-size(1.8);
@@ -41,7 +39,6 @@
             left: 50px;
             font-size: 1.5rem;
         }
-
         .emailQuestion{
             position: absolute;
             left: 50px;
@@ -50,7 +47,6 @@
             top: 66px;
             animation: LabelMoveUp 0.3s forwards;
         }
-
         .pitanje{
             position: absolute;
             left: 50px;
@@ -60,8 +56,6 @@
             transition: all 0.3s;
             animation: LabelMoveUp 0.3s forwards;
         }
-
-    
                     /* The container */
                     .container {
                         display: block;
@@ -106,9 +100,6 @@
                         background-color: #eee;
                         border: 1px solid green;
                     }
-
-                
-
                     /* Create the checkmark/indicator (hidden when not checked) */
                     .checkmark:after {
                         content: "";
@@ -151,17 +142,13 @@
                 border-bottom: 2px solid $color-text-red;
                     }                
         }
-
     }
-
-
     .bdtInform {
        float: left;
         background-color: $color-text-red;
         width: 182px;
         height: 50px;
         border: none;
-
         color: white;
         padding: 15px 50px;
         @include font-size(1.4);
@@ -176,13 +163,8 @@
         background-color: $color-back;
         border-bottom: 2px solid $color-gray;
 
-        h3 {
-            @include font-size(2.4);
-        }
-
-        p {
-            @include font-size(1.7);
-        }
+        h3 {@include font-size(2.4);}
+        p {@include font-size(1.7);}
     }
 
     .btnPitanjeZaNas {
@@ -204,7 +186,6 @@
     }
 
     a{
-       
         margin-left:  auto;
         width: 50px;
     }
@@ -230,26 +211,23 @@
             fill:$color-text-red;
         }
     }
+    .iconice-sive{
+        margin: 5px;
+        width: 11px;
+        height: 11px;
+        opacity: 0.5;
+     }
 }
 
 @keyframes LabelMoveUp{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
+    0%{opacity: 0;
+    }100%{opacity: 1;
         transform: translateY(-20px)
     }
 }
 
 @keyframes strelica-gore-dole{
-    0%{
-        transform: translateY(0px) rotate(-90deg);
-    }
-    50%{
-        transform: translateY(-20px) rotate(-90deg) ;
-    }
-    100%{
-        transform: translateX(0px) rotate(-90deg);
-    }
+    0%{transform: translateY(0px) rotate(-90deg);}
+    50%{transform: translateY(-20px) rotate(-90deg) ;}
+    100%{transform: translateX(0px) rotate(-90deg);}
 }

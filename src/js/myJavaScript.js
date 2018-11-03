@@ -33,8 +33,6 @@ $(document).ready(function(){
           $('#broj3').text(x3);                          
       }
         
-        
-
         $('html, body').animate({scrollTop: $(this.hash).offset().top - 330}, 1000);
         return false;
         

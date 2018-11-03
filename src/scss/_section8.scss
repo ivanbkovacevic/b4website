@@ -21,8 +21,6 @@
         @include font-size(1.3);
     }
 
- 
-
     .iconice-sive{
        border: 1px solid blue;
        width: 100%;
@@ -32,7 +30,6 @@
         display: inline-block;
        }
       
-
         .iconica{
          display: inline-block;
             width: 10px;
@@ -43,24 +40,19 @@
  
     .section8row{
         height: 80px;
-        width: 50%;
+        width: 100%;
         padding-top: 20px;
 
         .mainLink{
             display: block;
             color:$color-text-red;
-
-           
             &:hover .iconica-strelica{
                 animation: strelica-levo-desno 0.4s forwards 3;
               }
         }
 
-     
-    
         .iconica-strelica{
             margin-left: 18px;
-      
         }
 }
 

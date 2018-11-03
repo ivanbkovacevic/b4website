@@ -30,7 +30,6 @@ a{
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-   
 }
   
     .rollRed{
@@ -88,7 +87,9 @@ a{
     p{
         color:$color-gray;
         @include font-size(1.4);
+       
     }
+ 
     a{
         font-size: 1.1rem;
         text-decoration: none;
@@ -102,7 +103,8 @@ a{
     }
 
     .iconsCol{
-        padding-right: 150px;
+        padding-right: 30px;
+       
     }
 
 .bottomRow{
@@ -110,10 +112,7 @@ a{
     border-top: 1px solid gray;
     padding: 33px;
     
-   a{
-    @include font-size(1.8);
-   }
-  
+   a{@include font-size(1.8);}
 }
 
 }

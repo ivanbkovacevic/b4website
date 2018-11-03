@@ -1,5 +1,11 @@
 .carousel-caption {
     bottom: 200px;
+    @media screen and (max-width: 1240px) {
+        bottom: 25px;
+      }
+      @media screen and (max-width: 980px) {
+        bottom: 115px;
+      }
 }
 
 

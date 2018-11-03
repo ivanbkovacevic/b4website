@@ -3,10 +3,7 @@
     font-size: $sizeValue + rem;
   }
 
-  @mixin topHeader-a{
-    text-decoration: none;
-    color: $color-gray;
-  }
+
 
   @mixin redArrowsvg {
             margin-left: 18px;

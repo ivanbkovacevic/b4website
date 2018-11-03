@@ -1,16 +1,17 @@
 
 .heroHeader{
-  
     position: relative;
-   
-
     .main-title{
-       
         color:white;
         top:225px;
         left:130px;
         width: 500px;
         z-index: 3;
+        text-align: start;
+
+        @media screen and (max-width: 1240px) {
+            width: 350px;
+          }
     }
 
     .title1{
@@ -23,6 +24,13 @@
         color:white;
         font-weight: 100;
         @include font-size(1.4);
+        @media screen and (max-width: 1240px) {
+            margin-bottom: 15px;
+          }
+          @media screen and (max-width: 980px) {
+            margin-bottom: 10px;
+            font-size:1rem;
+          }
        
     }
     .title2{
@@ -32,6 +40,13 @@
         z-index: 2;
         margin-bottom: 35px;
         @include font-size(5.7);
+        @media screen and (max-width: 1240px) {
+            margin-bottom: 11px;
+          }
+          @media screen and (max-width: 980px) {
+            margin-bottom: 10px;
+            font-size:4rem;
+          }
       
     }
     .title3{
@@ -41,21 +56,23 @@
         @include font-size(1.8);
         letter-spacing: 2px;
         margin-bottom: 50px;
+        @media screen and (max-width: 1240px) {
+            margin-bottom: 15px;
+          }
+         @media screen and (max-width: 980px) {
+            margin-bottom: 10px;
+            font-size:1rem;
+          }
       
     }
 
     a{
         text-decoration: none;
-
         &:hover .iconica-strelica{
             animation: strelica-levo-desno 0.4s forwards 3;
           }
     }
-
-    .iconica-strelica{
-        margin-left: 18px;
-  
-    }
+    .iconica-strelica{margin-left: 18px;}
 
     .button1{ 
         background:white;
@@ -93,8 +110,6 @@
         }
     }
 
-  
-
     ol{
         width: 50px;
         margin-left: auto;
@@ -103,12 +118,9 @@
         width: 5px;
         height: 5px;
         border-radius: 100px;
-      
     }
 
-    .sliding1{
-        animation: sliding-up 0.7s forwards;
-    }
+    .sliding1{animation: sliding-up 0.7s forwards;}
 
     .sliding2{
         animation: sliding-up 0.7s forwards;
@@ -126,35 +138,20 @@
 }
 
 @keyframes strelica-levo-desno{
-    0%{
-        transform: translateX(0px);
-    }
-    50%{
-        transform: translateX(20px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
+    0%{transform: translateX(0px);}
+    50%{transform: translateX(20px);}
+    100%{transform: translateX(0px);}
 }
 
 @keyframes strelica-dole-gore{
-    0%{
-        transform: translateY(0px) rotate(90deg);
-    }
-    50%{
-        transform: translateY(20px) rotate(90deg);
-    }
-    100%{
-        transform: translateX(0px) rotate(90deg) ;
-    }
+    0%{transform: translateY(0px) rotate(90deg);}
+    50%{transform: translateY(20px) rotate(90deg);}
+    100%{transform: translateX(0px) rotate(90deg) ;}
 }
 
 @keyframes sliding-up{
-    0%{
-        opacity: 0;
-        transform: translateY(20px);
-    }
-   
+    0%{opacity: 0;
+    transform: translateY(20px);}
     100%{
         opacity: 1;
         transform: translateY(0px);
