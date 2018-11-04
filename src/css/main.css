@@ -6492,7 +6492,7 @@ body {
     z-index: 2;
     left: 50%;
     color: #e60028;
-    bottom: 5%; }
+    bottom: 10%; }
     .heroHeader .button2:hover .iconica-strelica-dugme {
       animation: strelica-dole-gore 0.4s forwards; }
     .heroHeader .button2 .iconica-strelica-dugme {
@@ -6583,8 +6583,7 @@ body {
   .section3 p {
     font-size: 14px;
     font-size: 1.4rem;
-    min-height: 100px;
-    border: 1px solid green; }
+    min-height: 100px; }
   .section3 a {
     font-size: 18px;
     font-size: 1.8rem;
@@ -6782,18 +6781,18 @@ body {
     animation: rollingRed2 2s forwards; }
   .section5 .rollGray2 {
     position: absolute;
-    top: 22.5%;
+    top: 15.5%;
     left: 15px;
     right: -122px;
-    bottom: 22%;
+    bottom: 21%;
     background-color: #aaaaaa;
     z-index: 15; }
   .section5 .rollGrayAnim2 {
     position: absolute;
-    top: 22.5%;
+    top: 15.5%;
     left: 15px;
     right: -122px;
-    bottom: 22%;
+    bottom: 21%;
     background-color: #aaaaaa;
     z-index: 15;
     animation: rollingGray2 2s forwards; }
@@ -6829,6 +6828,9 @@ body {
 .section6 {
   border-top: 2px solid #aaaaaa;
   padding: 0 120px; }
+  @media screen and (max-width: 759px) {
+    .section6 {
+      padding: 0 5px; } }
   .section6 .hidden {
     opacity: 0; }
   .section6 .apear {
@@ -7072,8 +7074,14 @@ body {
 .section8 {
   color: #aaaaaa;
   padding-left: 60px; }
+  @media screen and (max-width: 759px) {
+    .section8 {
+      padding: 5px; } }
   .section8 .section8Col {
     padding-bottom: 50px; }
+    @media screen and (max-width: 759px) {
+      .section8 .section8Col {
+        padding: 15px; } }
     .section8 .section8Col a {
       display: inline-block;
       font-size: 14px;
@@ -7081,11 +7089,18 @@ body {
       text-decoration: none;
       color: #aaaaaa;
       margin-bottom: 35px; }
+      @media screen and (max-width: 759px) {
+        .section8 .section8Col a {
+          margin-bottom: 5px; } }
   .section8 h6 {
     margin-top: 90px;
     margin-bottom: 65px;
     font-size: 13px;
     font-size: 1.3rem; }
+    @media screen and (max-width: 759px) {
+      .section8 h6 {
+        margin-bottom: 5px;
+        margin-top: 5px; } }
   .section8 .iconice-sive {
     border: 1px solid blue;
     width: 100%; }

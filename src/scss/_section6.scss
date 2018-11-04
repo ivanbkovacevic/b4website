@@ -2,6 +2,9 @@
 
     border-top: 2px solid $color-gray;
     padding: 0 120px;
+    @media screen and (max-width: 759px) {
+        padding: 0 5px;
+      }
 .hidden{
     opacity: 0;
 }

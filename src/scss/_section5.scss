@@ -15,16 +15,10 @@
         margin-bottom: 114px;
     }
 
-    p{
-        @include font-size(1.8);
-    }
+    p{  @include font-size(1.8); }
 
-    h1 {
-       
-        @include font-size(4.2);
-        color: $color-gray-dark;
-       
-    }
+    h1 { @include font-size(4.2);
+        color: $color-gray-dark; }
 
 
     // .wraper2{
@@ -38,7 +32,6 @@
         margin-top: 264px;
         width: 960px;
         padding-bottom: 20px;
-
     }
 
     .imageDiv{
@@ -63,24 +56,22 @@
 
     .rollGray2{
         position: absolute;
-        top:22.5%;
+        top:15.5%;
         left:15px;
         right:-122px;
-        bottom:22%;
+        bottom:21%;
          background-color: $color-gray;
          z-index: 15;
      }
-
      .rollGrayAnim2{
         position: absolute;
-        top:22.5%;
+        top:15.5%;
         left:15px;
         right:-122px;
-        bottom:22%;
+        bottom:21%;
          background-color: $color-gray;
          z-index: 15;
           animation: rollingGray2 2s forwards;
- 
      }
 
     .iconica-strelica {
@@ -97,30 +88,18 @@
 
 
 @keyframes rollingRed2{
-    0%{     
-        transform: translateX(130%);
-    }
-    100%{
-        transform: translateX(0);
-    }
+    0%{  transform: translateX(130%); }
+    100%{ transform: translateX(0); }
 }
 
 @keyframes rollingGray2{
-    0%{     
-        right:-122px;
-    }
-    100%{
-        right:1199px;
-    }
+    0%{ right:-122px; }
+    100%{ right:1199px; }
 }
 
 @keyframes movingUp {
-    0%{
-        opacity: 0;
-        transform: translateY(100px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0)
-    }
+    0%{  opacity: 0;
+         transform: translateY(100px); }
+    100%{ opacity: 1;
+          transform: translateY(0); }
 }

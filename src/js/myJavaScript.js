@@ -33,9 +33,8 @@ $(document).ready(function(){
           $('#broj3').text(x3);                          
       }
         
-        $('html, body').animate({scrollTop: $(this.hash).offset().top - 330}, 1000);
-        return false;
-        
+        $('html, body').animate({scrollTop: $(this.hash).offset().top - 145}, 1000);
+        return false;     
     });
 
 
@@ -57,7 +56,7 @@ $(document).ready(function(){
 
             }
 
-            if(scroll >= 3500){
+            if(scroll >= 3000){
                 $('#wraper3').removeClass("d-none");
                 $('#wraper3').addClass("wraper3");
             }

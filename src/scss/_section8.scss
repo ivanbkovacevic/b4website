@@ -1,9 +1,15 @@
 .section8{
     color:$color-gray;
     padding-left: 60px;
+    @media screen and (max-width: 759px) {
+        padding: 5px;
+      }
 
     .section8Col{
         padding-bottom: 50px;
+        @media screen and (max-width: 759px) {
+            padding: 15px;
+          }
 
         a{    
             display: inline-block; 
@@ -11,6 +17,9 @@
             text-decoration: none;
             color:$color-gray;
             margin-bottom:35px; 
+            @media screen and (max-width: 759px) {
+                margin-bottom:5px; 
+              }
         }
 
     }
@@ -19,6 +28,10 @@
         margin-top: 90px;
         margin-bottom: 65px;
         @include font-size(1.3);
+        @media screen and (max-width: 759px) {
+            margin-bottom:5px;
+            margin-top: 5px; 
+          }
     }
 
     .iconice-sive{
