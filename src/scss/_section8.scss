@@ -1,15 +1,18 @@
 .section8{
     color:$color-gray;
     padding-left: 60px;
-    @media screen and (max-width: 759px) {
-        padding: 5px;
-      }
+    @include media-breakpoint-down(xs) { 
+        padding-left: 10px;
+    }
 
     .section8Col{
         padding-bottom: 50px;
-        @media screen and (max-width: 759px) {
-            padding: 15px;
-          }
+        @include media-breakpoint-down(xs) { 
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+          
+        }
 
         a{    
             display: inline-block; 
@@ -17,9 +20,10 @@
             text-decoration: none;
             color:$color-gray;
             margin-bottom:35px; 
-            @media screen and (max-width: 759px) {
-                margin-bottom:5px; 
-              }
+            @include media-breakpoint-down(xs) { 
+                margin-bottom:5px;
+                display: block;  
+            }
         }
 
     }
@@ -28,10 +32,10 @@
         margin-top: 90px;
         margin-bottom: 65px;
         @include font-size(1.3);
-        @media screen and (max-width: 759px) {
-            margin-bottom:5px;
-            margin-top: 5px; 
-          }
+        @include media-breakpoint-down(xs) { 
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
     }
 
     .iconice-sive{

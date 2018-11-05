@@ -97,6 +97,9 @@
         left:50%;
         color:$color-text-red;
         bottom: 10%;
+        @include media-breakpoint-down(xs) { 
+           display: none;
+             }
       
        &:hover .iconica-strelica-dugme{
         animation: strelica-dole-gore 0.4s forwards ;

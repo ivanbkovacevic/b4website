@@ -6496,6 +6496,9 @@ body {
     left: 50%;
     color: #e60028;
     bottom: 10%; }
+    @media (max-width: 575.98px) {
+      .heroHeader .button2 {
+        display: none; } }
     .heroHeader .button2:hover .iconica-strelica-dugme {
       animation: strelica-dole-gore 0.4s forwards; }
     .heroHeader .button2 .iconica-strelica-dugme {
@@ -6554,23 +6557,34 @@ body {
   top: 0px;
   background-color: transparent !important;
   z-index: 555; }
-  .navbar .navbar-expand-md {
+  @media (max-width: 575.98px) {
+    .navbar {
+      position: static;
+      padding-top: 0;
+      background-color: #222121 !important;
+      margin-bottom: 20px; } }
+  .navbar .navbar-expand-sm {
     background-color: transparent !important;
     z-index: 555; }
   .navbar .navbar-toggler {
-    margin-left: 300px; }
+    margin-left: 30px; }
   .navbar .navbar-toggler-icon {
-    border: 1px solid white;
-    color: white; }
+    border: 1px solid white; }
   .navbar .iconica-brand {
     height: 30px; }
+    @media (max-width: 575.98px) {
+      .navbar .iconica-brand {
+        display: none; } }
   .navbar .nav-link {
     color: white;
     text-decoration: none;
     font-size: 14px;
     font-size: 1.4rem;
     transition: all 0.3s;
-    padding-left: 600px; }
+    padding-left: 60px; }
+    @media (max-width: 575.98px) {
+      .navbar .nav-link {
+        border-bottom: 1px solid white; } }
     .navbar .nav-link:hover {
       color: #e60028; }
 
@@ -6589,7 +6603,7 @@ body {
     font-size: 14px;
     font-size: 1.4rem;
     margin-bottom: 26px; }
-    @media (max-width: 575.98px) {
+    @media (max-width: 767.98px) {
       .section3 h6 {
         color: black; } }
   .section3 p {
@@ -6646,6 +6660,10 @@ body {
     height: 8px;
     border-radius: 100px;
     margin-right: 21px; }
+  .section3 .carousel-control-next {
+    height: 100%; }
+  .section3 .carousel-control-prev {
+    height: 100%; }
 
 .section4 {
   text-align: center; }
@@ -7193,14 +7211,16 @@ body {
 .section8 {
   color: #aaaaaa;
   padding-left: 60px; }
-  @media screen and (max-width: 759px) {
+  @media (max-width: 575.98px) {
     .section8 {
-      padding: 5px; } }
+      padding-left: 10px; } }
   .section8 .section8Col {
     padding-bottom: 50px; }
-    @media screen and (max-width: 759px) {
+    @media (max-width: 575.98px) {
       .section8 .section8Col {
-        padding: 15px; } }
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px; } }
     .section8 .section8Col a {
       display: inline-block;
       font-size: 14px;
@@ -7208,18 +7228,19 @@ body {
       text-decoration: none;
       color: #aaaaaa;
       margin-bottom: 35px; }
-      @media screen and (max-width: 759px) {
+      @media (max-width: 575.98px) {
         .section8 .section8Col a {
-          margin-bottom: 5px; } }
+          margin-bottom: 5px;
+          display: block; } }
   .section8 h6 {
     margin-top: 90px;
     margin-bottom: 65px;
     font-size: 13px;
     font-size: 1.3rem; }
-    @media screen and (max-width: 759px) {
+    @media (max-width: 575.98px) {
       .section8 h6 {
-        margin-bottom: 5px;
-        margin-top: 5px; } }
+        margin-top: 5px;
+        margin-bottom: 5px; } }
   .section8 .iconice-sive {
     border: 1px solid blue;
     width: 100%; }
