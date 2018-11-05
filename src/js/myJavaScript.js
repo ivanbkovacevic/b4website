@@ -2,6 +2,7 @@ $(document).ready(function(){
     var myInt1=null;
     var myInt2=null;
     var myInt3=null;
+    var w = window.innerWidth;
     $('.scroll').on('click', function() { 
         var x1=1000;
          myInt1= setInterval(myCounter1,8);
@@ -57,13 +58,16 @@ $(document).ready(function(){
             }
 
             if(scroll >= 3000){
-                $('#wraper3').removeClass("d-none");
-                $('#wraper3').addClass("wraper3");
+                if(w>576){
+                    $('.wraper3').css('display','block');
+                    $('#wraper3').addClass("wraper3");
+                }
+              
             }
 
             if(scroll >= 3800){
+                if(w>576){
                 $('#sec6-col1').addClass('apear');
- 
                 setTimeout(function() {
                  $('#sec6-col2').addClass('apear');
              }, 300);
@@ -72,7 +76,7 @@ $(document).ready(function(){
              }, 600);
                
              }
-        
+            }
          
         });
 
@@ -94,6 +98,19 @@ $(document).ready(function(){
             $('#movingLabelpitanje').removeClass('movingLabel');
             $('#movingLabelpitanje').addClass('pitanje');
         })
+
+
+        $(window).resize(function(){
+            var wWidth=window.innerWidth;
+            if(wWidth<576){
+                $('.bdtInform').text(" ");
+                }else{
+                    $('.bdtInform').text("PRIJAVI SE");
+                }
+                this.console.log(wWidth + "siriiiiina");
+        });
+      
+      
 })
     
    

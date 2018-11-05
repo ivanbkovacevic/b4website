@@ -8,6 +8,12 @@
     margin-top: 143px;
     margin-bottom: 68px;
     padding: 0 65px;
+    @include media-breakpoint-down(xs) { 
+        padding: 0 0;
+        margin-top: 63px;
+        margin-bottom:55px;
+        height: 250px;
+        }
 }
 
 a{
@@ -30,6 +36,9 @@ a{
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+    @include media-breakpoint-down(xs) { 
+        height: 250px;
+        }
 }
   
     .rollRed{
@@ -41,6 +50,9 @@ a{
         background-color: $color-text-red;
         z-index: 22;
         animation: rollingRed 2s forwards;
+        @include media-breakpoint-down(xs) { 
+           display: none;
+            }
 
     }
 
@@ -52,6 +64,9 @@ a{
         bottom:0;
          background-color: $color-gray;
          z-index: 15;
+         @include media-breakpoint-down(xs) { 
+            display: none;
+             }
      }
 
      .rollGrayAnim{
@@ -64,6 +79,9 @@ a{
          background-color: $color-gray;
          z-index: 15;
           animation: rollingGray 2s forwards;
+          @include media-breakpoint-down(xs) { 
+            display: none;
+             }
  
      }
 
@@ -72,11 +90,18 @@ a{
         margin: 0 auto;
         font-size: 1.2rem;
         margin-bottom: 78px;
+        max-width: 100%;
+        @include media-breakpoint-down(xs) { 
+           padding: 25px;
+           margin-bottom: 50px;
+             }
+      
     }
 
     h2{
         @include font-size(3.2);
         margin-bottom: 28px;
+        max-width: 100%;
     }
 
     h3{
@@ -87,7 +112,7 @@ a{
     p{
         color:$color-gray;
         @include font-size(1.4);
-       
+        max-width: 100%;
     }
  
     a{
@@ -100,6 +125,10 @@ a{
 
     .iconsRow{
        padding: 0 118px;
+       @include media-breakpoint-down(xs) { 
+        padding: 0 30px;
+         }
+       
     }
 
     .iconsCol{
@@ -135,6 +164,7 @@ a{
 .osiguranje{
     height: 80px;
     margin-bottom: 50px;
+    margin-left: -25px;
 }
 
 .registracija{

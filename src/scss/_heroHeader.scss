@@ -114,6 +114,11 @@
         width: 50px;
         margin-left: auto;
     }
+    .carousel-indicators{
+        .active{
+            background-color: red;
+           } 
+    }
     .carousel-li{
         width: 5px;
         height: 5px;

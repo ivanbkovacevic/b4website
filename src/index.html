@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <!-- d-none d-md-block -->
+  
    <!-- TOP HEADER ####################################################### -->
   <div class="row d-none d-md-block top-header">
     <div class='col d-flex justify-content-around'>
@@ -79,7 +79,7 @@
           <use xlink:href="sprite.svg#icon-arrow"></use>
         </svg> </button></a>
 
-    <div id="carouselExampleFade" data-interval="31000" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carouselExampleFade" data-interval="31000" class="carousel slide  carousel-fade" data-ride="carousel">
       <ol class="carousel-indicators">
         <li class="carousel-li" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li class="carousel-li" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -165,23 +165,80 @@
       perspiciatis!</p>
 
     <div class="row d-flex align-items-start brojeviRow ">
-      <div class="col-lg-4 col-md-6 col-sm-8  brojeviCol">
+      <div class="d-none d-sm-block col-lg-4 col-md-4  brojeviCol">
         <h2 id="broj1" class="broj">1000</h2>
         <h6>NETO VREDNOST PREDMETA</h6>
         <p class="text-muted">Što predstavlja 15% od ukupne vrednosti neto predmeta lizinga u Srbiji. </p>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-8  brojeviCol">
+      <div class="d-none d-sm-block col-lg-4 col-md-4  brojeviCol">
         <h2 id="broj2" class="broj">1230</h2>
         <h6>BROJ UGOVORA</h6>
         <p class="text-muted">Što predstavlja 15% od ukupnog broja
           ugovora lizinga u Srbiji </p>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-8  brojeviCol">
+      <div class="d-none d-sm-block col-lg-4 col-md-4  brojeviCol">
         <h2 id="broj3" class="broj">1653</h2>
         <h6>BROJ AKTIVNOH UGOVORA</h6>
         <p class="text-muted">Što predstavlja 143m eur bilasna aktiva ???</p>
       </div>
     </div>
+
+    <!-- start CAROUSEL NA SM SCREEN ################################### -->
+    <div id="carouselExampleFade1" data-interval="2100" class="carousel slide carousel-fade  d-sm-block d-md-none" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li class="carousel-li" data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+        <li class="carousel-li" data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+        <li class="carousel-li" data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+       
+          <div class="carousel-caption">
+            <div class="col-sm-12 brojeviCol">
+              <h2 id="broj1" class="broj1">1000</h2>
+              <h6>NETO VREDNOST PREDMETA</h6>
+              <p class="text-muted">Što predstavlja 15% od ukupne vrednosti neto predmeta lizinga u Srbiji. </p>
+            </div>
+           
+          </div>
+
+        </div>
+        <div class="carousel-item">
+       
+          <div class="carousel-caption">
+
+            <div class="col-sm-12  brojeviCol">
+              <h2 id="broj2" class="broj">1230</h2>
+              <h6>BROJ UGOVORA</h6>
+              <p class="text-muted">Što predstavlja 15% od ukupnog broja
+                ugovora lizinga u Srbiji </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+        
+          <div class="carousel-caption">
+         
+            <div class="col-sm-12  brojeviCol">
+              <h2 id="broj3" class="broj">1653</h2>
+              <h6>BROJ AKTIVNOH UGOVORA</h6>
+              <p class="text-muted">Što predstavlja 143m eur bilasna aktiva ???</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="prev" class="carousel-control-prev" href="#carouselExampleFade1" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a id="next" class="carousel-control-next" href="#carouselExampleFade1" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+     <!-- end CAROUSEL NA SM SCREEN ############################# -->
 
     <div class="text-center pt-5  bottomRow">
       <a href='#'>Nesto sa strelicom
@@ -189,6 +246,7 @@
           <use xlink:href="sprite.svg#icon-arrow"></use>
         </svg></a>
     </div>
+   
   </section>
 
   <!-- SECTION 4 ####################################################### -->
@@ -201,12 +259,13 @@
     </div>
     <div>
       <h2>Zavrsite sve na jednom mestu</h2>
-      <p class="text-muted head-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt tempore eligendi
+      <p class="text-muted text-center head-p">Pored toga što ćemo se potruditi da vaš lizing bude uspešno odobren, 
+        kod nas možete završiti i ostale stvari koje su vam neophodne.
         onsectetur adipisicing elit. Nesciunt teat.</p>
     </div>
     <div class="row iconsRow">
 
-      <div class="col-lg-4 col-md-6 col-sm-8 text-left iconsCol">
+      <div class="col-lg-4 col-md-6 col-sm-12 text-left iconsCol">
             <svg class="iconica-crvena lizing">
                 <use xlink:href="sprite.svg#icon-lizing"></use>
               </svg>
@@ -218,7 +277,7 @@
                     <use xlink:href="sprite.svg#icon-arrow"></use>
                   </svg></a>     
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-8 text-left iconsCol">
+      <div class="col-lg-4 col-md-6 col-sm-12 text-left iconsCol">
         <svg class="iconica-crvena osiguranje">
           <use xlink:href="sprite.svg#icon-osiguranje"></use>
         </svg>
@@ -230,7 +289,7 @@
               <use xlink:href="sprite.svg#icon-arrow"></use>
             </svg></a>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-8 text-left iconsCol">
+      <div class="col-lg-4 col-md-6 col-sm-12 text-left iconsCol">
         <svg class="iconica-crvena registracija">
           <use xlink:href="sprite.svg#icon-reg"></use>
         </svg>
@@ -256,14 +315,14 @@
 
   <section class="section5">
     <div class="row">
-      <div class="col-lg-3">
-        <div id="wraper3" class="d-none">
-          <h1 id="finanLizH1">Finansijski lizing</h1>
-          <p id="finanLizP" class='text-muted'>Saznajte sve pojedinosti i odaberite najbolje rešenje za svoje potrebe.</p>
+      <div class="col-lg-3 col-sm-12">
+        <div id="wraper3" class="wraper3">
+          <h1  class="finanLizH1">Finansijski lizing</h1>
+          <p  class='text-muted'>Saznajte sve pojedinosti i odaberite najbolje rešenje za svoje potrebe.</p>
         </div>
 
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-9 col-sm-12">
         <div class="wraper2">
           <div id="redBox2" class=""></div>
           <div class="imageDiv"></div>
@@ -286,34 +345,34 @@
   <section class="section6">
     <h1>Magazin Finovacije</h1>
     <div class="row">
-      <div id="sec6-col1" class="col-lg-4 col-md-6 col-sm-12 hidden">
-        <h6>ONLINE KREDIT</h6>
+      <div id="sec6-col1" class="col-lg-4 col-md-6 col-sm-12 hidden apearSM">
+        <h6>INVESTICIONO BANKARSTVO</h6>
         <img src='assets/img/magazin1.jpg' alt='magazin1'>
         <h4>Zašto je strpljenje jedna od ključnih karakteristika dobrog </h4>
-        <p>Nova jedinstva opcija u Societe Generale e-banking platformi omogućava korisnicima da brzo i lako realizuju
+        <p class="d-none d-lg-block">Nova jedinstva opcija u Societe Generale e-banking platformi omogućava korisnicima da brzo i lako realizuju
           kompletan proces odobrenja kredita online.
           U nekoliko koraka u okviru e-banking platforme, dođite do željene sume novca!</p>
-        <a href="#">Saznaj vise <svg class="iconica-strelica">
+        <a class="d-none d-lg-block" href="#">Saznaj vise <svg class="iconica-strelica">
             <use xlink:href="sprite.svg#icon-arrow"></use>
           </svg></a>
       </div>
-      <div id="sec6-col2" class="col-lg-4 col-md-6 col-sm-12 hidden">
-        <h6>ONLINE KREDIT</h6>
+      <div id="sec6-col2" class="col-lg-4 col-md-6 col-sm-12 hidden apearSM">
+        <h6>FAKTORING</h6>
         <img src='assets/img/magazin2.jpg' alt='magazin2'>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+        <h4>Moguća i štednja uz trošenje u societe generale banci</h4>
+        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit
           Qui molestiae accusamus labore et vero, iste nulla magni assumenda quisquam iusto.</p>
-        <a href="#">Saznaj vise <svg class="iconica-strelica">
+        <a class="d-none d-lg-block" href="#">Saznaj vise <svg class="iconica-strelica">
             <use xlink:href="sprite.svg#icon-arrow"></use>
           </svg></a>
       </div>
-      <div id="sec6-col3" class="col-lg-4 col-md-6 col-sm-12 hidden">
+      <div id="sec6-col3" class="col-lg-4 col-md-6 col-sm-12  hidden apearSM">
         <h6>ONLINE KREDIT</h6>
         <img src='assets/img/magazin3.jpg' alt='magazin3'>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
-        <p class="myText">Lorem ipsum dolor sit amet consectetur adipisicing elit
+        <h4>Zašto je strpljenje jedna od ključnih karakteristika dobrog menadžera</h4>
+        <p class="d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit
           Qui molestiae accusamus labore et vero, iste nulla magni assumenda quisquam iusto.</p>
-        <a href="#">Saznaj vise <svg class="iconica-strelica">
+        <a class="d-none d-lg-block" href="#">Saznaj vise <svg class="iconica-strelica">
             <use xlink:href="sprite.svg#icon-arrow"></use>
           </svg></a>
       </div>
@@ -330,7 +389,7 @@
         <p>Ne propustite savete i dobre priče koje hiljade naših klijenata redovno dobija u svoje elektronsko sanduče.</p>
         <form class="myForm clearfix">
           <input class="inputInform" type="email" placeholder="Tvoja email adresa">
-          <button class="bdtInform" type="submit">PRIJAVI SE</button>
+          <button class="bdtInform" type="submit"></button>
         </form>
       </div>
     </div>

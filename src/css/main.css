@@ -6313,13 +6313,16 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 .carousel-caption {
-  bottom: 200px; }
+  bottom: 205px; }
   @media screen and (max-width: 1240px) {
     .carousel-caption {
       bottom: 25px; } }
   @media screen and (max-width: 980px) {
     .carousel-caption {
       bottom: 115px; } }
+  @media (max-width: 767.98px) {
+    .carousel-caption {
+      bottom: 1px; } }
 
 @keyframes strelica-gore-dole {
   0% {
@@ -6503,6 +6506,8 @@ body {
   .heroHeader ol {
     width: 50px;
     margin-left: auto; }
+  .heroHeader .carousel-indicators .active {
+    background-color: red; }
   .heroHeader .carousel-li {
     width: 5px;
     height: 5px;
@@ -6576,14 +6581,24 @@ body {
     font-size: 32px;
     font-size: 3.2rem;
     padding: 5px; }
+    @media (max-width: 575.98px) {
+      .section3 h1 {
+        margin-top: 8px;
+        max-width: 100%; } }
   .section3 h6 {
     font-size: 14px;
     font-size: 1.4rem;
     margin-bottom: 26px; }
+    @media (max-width: 575.98px) {
+      .section3 h6 {
+        color: black; } }
   .section3 p {
     font-size: 14px;
     font-size: 1.4rem;
     min-height: 100px; }
+    @media (max-width: 575.98px) {
+      .section3 p {
+        margin-bottom: 35px; } }
   .section3 a {
     font-size: 18px;
     font-size: 1.8rem;
@@ -6595,6 +6610,11 @@ body {
     margin-bottom: 68px;
     font-size: 18px;
     font-size: 1.8rem; }
+    @media (max-width: 575.98px) {
+      .section3 .head-p {
+        max-width: 100%;
+        margin-bottom: 70px;
+        padding: 0 20px; } }
   .section3 h2 {
     font-size: 93px;
     font-size: 9.3rem;
@@ -6615,6 +6635,17 @@ body {
       animation: strelica-levo-desno 0.4s forwards 3; }
   .section3 .iconica-strelica {
     margin-left: 18px; }
+  .section3 .carousel-item {
+    height: 300px;
+    width: 100%;
+    border: 1px solid red; }
+  .section3 .carousel-indicators .active {
+    background-color: red; }
+  .section3 .carousel-li {
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    margin-right: 21px; }
 
 .section4 {
   text-align: center; }
@@ -6625,6 +6656,12 @@ body {
     margin-top: 143px;
     margin-bottom: 68px;
     padding: 0 65px; }
+    @media (max-width: 575.98px) {
+      .section4 .wraper {
+        padding: 0 0;
+        margin-top: 63px;
+        margin-bottom: 55px;
+        height: 250px; } }
   .section4 a {
     text-decoration: none;
     display: inline-block;
@@ -6643,6 +6680,9 @@ body {
     /* Do not repeat the image */
     background-size: cover;
     /* Resize the background image to cover the entire container */ }
+    @media (max-width: 575.98px) {
+      .section4 .imageSec4 {
+        height: 250px; } }
   .section4 .rollRed {
     position: absolute;
     top: 0;
@@ -6652,6 +6692,9 @@ body {
     background-color: #e60028;
     z-index: 22;
     animation: rollingRed 2s forwards; }
+    @media (max-width: 575.98px) {
+      .section4 .rollRed {
+        display: none; } }
   .section4 .rollGray {
     position: absolute;
     top: 0;
@@ -6660,6 +6703,9 @@ body {
     bottom: 0;
     background-color: #aaaaaa;
     z-index: 15; }
+    @media (max-width: 575.98px) {
+      .section4 .rollGray {
+        display: none; } }
   .section4 .rollGrayAnim {
     position: absolute;
     top: 0;
@@ -6669,15 +6715,24 @@ body {
     background-color: #aaaaaa;
     z-index: 15;
     animation: rollingGray 2s forwards; }
+    @media (max-width: 575.98px) {
+      .section4 .rollGrayAnim {
+        display: none; } }
   .section4 .head-p {
     width: 750px;
     margin: 0 auto;
     font-size: 1.2rem;
-    margin-bottom: 78px; }
+    margin-bottom: 78px;
+    max-width: 100%; }
+    @media (max-width: 575.98px) {
+      .section4 .head-p {
+        padding: 25px;
+        margin-bottom: 50px; } }
   .section4 h2 {
     font-size: 32px;
     font-size: 3.2rem;
-    margin-bottom: 28px; }
+    margin-bottom: 28px;
+    max-width: 100%; }
   .section4 h3 {
     font-size: 32px;
     font-size: 3.2rem;
@@ -6685,7 +6740,8 @@ body {
   .section4 p {
     color: #aaaaaa;
     font-size: 14px;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    max-width: 100%; }
   .section4 a {
     font-size: 1.1rem;
     text-decoration: none;
@@ -6693,6 +6749,9 @@ body {
     margin-bottom: 20px; }
   .section4 .iconsRow {
     padding: 0 118px; }
+    @media (max-width: 575.98px) {
+      .section4 .iconsRow {
+        padding: 0 30px; } }
   .section4 .iconsCol {
     padding-right: 30px; }
   .section4 .bottomRow {
@@ -6718,7 +6777,8 @@ body {
 
 .osiguranje {
   height: 80px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin-left: -25px; }
 
 .registracija {
   height: 85px;
@@ -6739,9 +6799,18 @@ body {
 .section5 {
   padding-top: 50px;
   padding-left: 90px; }
+  @media (max-width: 767.98px) {
+    .section5 {
+      padding-top: 0px;
+      padding-left: 0px; } }
   .section5 .wraper3 {
     animation: movingUp 0.6s forwards;
-    margin-top: 330px; }
+    margin-top: 330px;
+    display: none; }
+    @media (max-width: 575.98px) {
+      .section5 .wraper3 {
+        margin-top: 0px;
+        display: block; } }
   .section5 a {
     display: block;
     font-size: 18px;
@@ -6749,13 +6818,32 @@ body {
     text-decoration: none;
     color: #e60028;
     margin-bottom: 114px; }
+    @media (max-width: 575.98px) {
+      .section5 a {
+        text-align: center; } }
   .section5 p {
     font-size: 18px;
     font-size: 1.8rem; }
+    @media (max-width: 575.98px) {
+      .section5 p {
+        padding-top: 5px;
+        padding-left: 30px;
+        margin-bottom: 50px; } }
+  .section5 .main-p {
+    max-width: 765px;
+    font-size: 18px;
+    font-size: 1.8rem; }
+    @media (max-width: 575.98px) {
+      .section5 .main-p {
+        margin: 25px; } }
   .section5 h1 {
     font-size: 42px;
     font-size: 4.2rem;
     color: #5e5b5b; }
+    @media (max-width: 575.98px) {
+      .section5 h1 {
+        padding-top: 30px;
+        padding-left: 30px; } }
   .section5 img {
     margin-top: 264px;
     width: 960px;
@@ -6764,12 +6852,17 @@ body {
     background-image: url("../assets/img/sittingpeople1.jpg");
     height: 880px;
     /* You must set a specified height */
-    background-position: bottom;
+    background-position: center;
     /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
     background-size: 900px 700px;
     /* Resize the background image to cover the entire container */ }
+    @media (max-width: 575.98px) {
+      .section5 .imageDiv {
+        height: 235px;
+        background-size: cover;
+        width: 350px; } }
   .section5 .redBox2 {
     position: absolute;
     top: 70px;
@@ -6779,6 +6872,12 @@ body {
     background-color: red;
     z-index: -1;
     animation: rollingRed2 2s forwards; }
+    @media (max-width: 575.98px) {
+      .section5 .redBox2 {
+        top: -20px;
+        left: 90px;
+        width: 865px;
+        height: 55px; } }
   .section5 .rollGray2 {
     position: absolute;
     top: 15.5%;
@@ -6787,6 +6886,9 @@ body {
     bottom: 21%;
     background-color: #aaaaaa;
     z-index: 15; }
+    @media (max-width: 575.98px) {
+      .section5 .rollGray2 {
+        display: none; } }
   .section5 .rollGrayAnim2 {
     position: absolute;
     top: 15.5%;
@@ -6796,14 +6898,13 @@ body {
     background-color: #aaaaaa;
     z-index: 15;
     animation: rollingGray2 2s forwards; }
+    @media (max-width: 575.98px) {
+      .section5 .rollGrayAnim2 {
+        display: none; } }
   .section5 .iconica-strelica {
     width: 10px;
     height: 10px;
     fill: red; }
-  .section5 .main-p {
-    width: 765px;
-    font-size: 18px;
-    font-size: 1.8rem; }
 
 @keyframes rollingRed2 {
   0% {
@@ -6828,14 +6929,18 @@ body {
 .section6 {
   border-top: 2px solid #aaaaaa;
   padding: 0 120px; }
-  @media screen and (max-width: 759px) {
+  @media (max-width: 575.98px) {
     .section6 {
-      padding: 0 5px; } }
+      padding: 0 30px; } }
   .section6 .hidden {
     opacity: 0; }
   .section6 .apear {
     opacity: 0;
     animation: apear 2.5s forwards; }
+  @media (max-width: 575.98px) {
+    .section6 .apearSM {
+      opacity: 0;
+      animation: apear 2.5s forwards; } }
   .section6 h1 {
     text-align: center;
     margin-top: 75px;
@@ -6847,6 +6952,11 @@ body {
     font-size: 1.9rem;
     margin-bottom: 20px;
     margin-top: 10px; }
+    @media (max-width: 575.98px) {
+      .section6 h4 {
+        font-weight: bold;
+        margin-bottom: 60px;
+        margin-top: 35px; } }
   .section6 h6 {
     font-size: 13px;
     font-size: 1.3rem;
@@ -6862,14 +6972,12 @@ body {
     color: #e60028;
     margin-top: auto;
     margin-bottom: 70px; }
+    .section6 a:hover .iconica-strelica {
+      animation: strelica-levo-desno 0.4s forwards 3; }
   .section6 p {
     font-size: 14px;
     font-size: 1.4rem;
-    color: #5e5b5b; }
-  .section6 a {
-    text-decoration: none; }
-    .section6 a:hover .iconica-strelica {
-      animation: strelica-levo-desno 0.4s forwards 3; }
+    color: black; }
   .section6 .iconica-strelica {
     margin-left: 18px; }
 
@@ -6904,6 +7012,9 @@ body {
     font-size: 15px;
     font-size: 1.5rem;
     color: #e0dfdf; }
+    @media (max-width: 575.98px) {
+      .section7 .inputInform {
+        width: 250px; } }
   .section7 .myForm2 {
     display: none;
     padding-top: 50px;
@@ -7007,6 +7118,14 @@ body {
     padding: 15px 50px;
     font-size: 14px;
     font-size: 1.4rem; }
+    @media (max-width: 575.98px) {
+      .section7 .bdtInform {
+        width: 72px;
+        background-image: url("../assets/svg/auto.svg");
+        background-repeat: no-repeat;
+        background-size: 70px;
+        background-position: center;
+        background-color: white; } }
   .section7 .bdtInformContainer {
     padding: 66px;
     background-color: #e0dfdf; }
