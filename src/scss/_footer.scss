@@ -21,20 +21,17 @@ footer {
     }
   
 }
-.testCon{
-    background-color: green;
-    height: 100px;
+
+.linearGradient{
+   
+    background-image: linear-gradient(to right, $color-text-red 30%, gray 0), url('../assets/img/cikasabradom.jpg');
+    background-position: center;
+    background-size: 100%;
     margin-bottom: 100px;
     padding: 50px;
-
-    .test{
-        background-color: red;
-        width: 100px;
-        height: 30px;
-        margin:auto;
-      
-    }
-
-
+    height: 200px;
+    transform:  linear-gradient(90deg, $color-text-red 60%, gray 50%), url('../assets/img/cikasabradom.jpg') 2s easy-in;
 
 }
+
+

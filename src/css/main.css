@@ -7284,13 +7284,11 @@ footer {
     width: 12px;
     height: 12px; }
 
-.testCon {
-  background-color: green;
-  height: 100px;
+.linearGradient {
+  background-image: linear-gradient(to right, #e60028 30%, gray 0), url("../assets/img/cikasabradom.jpg");
+  background-position: center;
+  background-size: 100%;
   margin-bottom: 100px;
-  padding: 50px; }
-  .testCon .test {
-    background-color: red;
-    width: 100px;
-    height: 30px;
-    margin: auto; }
+  padding: 50px;
+  height: 200px;
+  transform: linear-gradient(90deg, #e60028 60%, gray 50%), url("../assets/img/cikasabradom.jpg") 2s easy-in; }
