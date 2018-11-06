@@ -28,6 +28,9 @@
         @include media-breakpoint-down(xs) { 
             width: 250px;
              }
+             @include media-breakpoint-down(md) { 
+                width: 232px;
+             }
 
     }
 
@@ -162,8 +165,12 @@
            background-size: 70px ;
            background-position: center;
             background-color: white;
-         
              }
+             @include media-breakpoint-down(md) { 
+                width: 122px;
+                padding: 5px 10px;
+             }
+       
     }
 
     .bdtInformContainer {
@@ -220,7 +227,7 @@
             transform: rotate(-90deg);
             height: 16px;
             width: 16px;
-            fill:$color-text-red;
+            fill:red;;
         }
     }
     .iconice-sive{

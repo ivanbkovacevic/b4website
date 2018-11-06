@@ -39,7 +39,6 @@
     }
 
     .iconice-sive{
-       border: 1px solid blue;
        width: 100%;
 
        a{
@@ -49,9 +48,10 @@
       
         .iconica{
          display: inline-block;
-            width: 10px;
-            height: 10px;
-            margin-bottom:0;         
+            width: 20px;
+            height: 20px;
+            margin-bottom:0;    
+            fill:$color-gray-dark;     
         }
     }
  
@@ -70,6 +70,7 @@
 
         .iconica-strelica{
             margin-left: 18px;
+           
         }
 }
 

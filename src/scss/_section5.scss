@@ -51,27 +51,26 @@
              }
     }
 
-    // .wraper2{
-    //     overflow: hidden;
-    //     position: relative;
-    //       margin-top: 143px;
-    //         margin-bottom: 68px;
-    // }
-
-    img {
-        margin-top: 264px;
-        width: 960px;
-        padding-bottom: 20px;
-
+    .wraper2{
+        overflow: hidden;
+        position: relative;
+        padding-left: 10px;
+        margin-top: 143px;
+        margin-bottom: 68px;
+        @include media-breakpoint-down(xs) { 
+            padding-top: 20px;
+            margin-top: 0px;
+            margin-bottom: 18px;
+             }
     }
 
     .imageDiv{
         background-image: url('../assets/img/sittingpeople1.jpg') ;
-    //background-color: #cccccc; /* Used if the image is unavailable */
-    height: 880px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: 900px 700px; /* Resize the background image to cover the entire container */
+    // background-color: #cccccc; /* Used if the image is unavailable */
+        height: 880px; /* You must set a specified height */
+        background-position: left; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: 900px 700px; /* Resize the background image to cover the entire container */
     @include media-breakpoint-down(xs) { 
         height: 235px;
         background-size: cover;
@@ -81,27 +80,29 @@
 
     .redBox2 {
         position: absolute;
-        top: 70px;
+        top: 0px;
         left: 290px;
         width: 865px;
         height: 375px;
         background-color: red;
         z-index: -1;
         animation: rollingRed2 2s forwards;
+
         @include media-breakpoint-down(xs) { 
-         top: -20px;
-        left: 90px;
-        width: 865px;
-        height: 55px;
+            top: -20px;
+            left: 90px;
+            width: 365px;
+            height: 130px;
              }
     }
 
     .rollGray2{
+        border: 1px solid orange;
         position: absolute;
-        top:15.5%;
-        left:15px;
+        top:9.5%;
+        left:0px;
         right:-122px;
-        bottom:21%;
+        bottom:10%;
          background-color: $color-gray;
          z-index: 15;
          @include media-breakpoint-down(xs) { 
@@ -110,10 +111,10 @@
      }
      .rollGrayAnim2{
         position: absolute;
-        top:15.5%;
-        left:15px;
+        top:9.5%;
+        left:0px;
         right:-122px;
-        bottom:21%;
+        bottom:10%;
          background-color: $color-gray;
          z-index: 15;
           animation: rollingGray2 2s forwards;

@@ -6,7 +6,7 @@
     z-index: 555;
     @include media-breakpoint-down(xs) { 
         position: static;
-        padding-top: 0;
+        padding: 0;
         background-color: rgb(34, 33, 33) !important;
         margin-bottom: 20px;
          }
@@ -18,9 +18,14 @@
 }
 .navbar-toggler{
     margin-left: 30px;
+    color: white;
 }
 .navbar-toggler-icon{
     border: 1px solid white;
+}
+.menu-close{
+    color:white;
+    margin-left: auto;
 }
 .iconica-brand{
     height: 30px;
@@ -34,21 +39,18 @@
     @include font-size(1.4);
     transition: all 0.3s;
     padding-left: 60px;
-    @include media-breakpoint-down(xs) { 
-        border-bottom: 1px solid white;
+    @include media-breakpoint-down(xs) {
+        border: 1px solid rgba(255, 255, 255, 0.37);
         padding-left: 10px;
 
-        &::before{
-            content: "-";
-            color:$color-text-red;   
-            height: 100px;
-            width: 10px;
-            margin-right: 5px;
-            background-color:$color-text-red;            
+        &:hover{
+            border-left: 1px solid red;
         }
     }
 
-    &:hover{ color:$color-text-red;   }
+    &:hover{ color:$color-text-red;   
+
+        }
     }
 
 }

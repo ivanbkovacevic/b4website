@@ -109,7 +109,19 @@ $(document).ready(function(){
                 }
                 this.console.log(wWidth + "siriiiiina");
         });
-      
+        
+        $("#toggleBtn").click(function(){ 
+             $(".menuBtnText").addClass("d-none");
+             if($(this).hasClass("open")){
+               $(this).removeClass("open");
+               $("#menuClose").removeClass("d-none");
+             }else{
+                $(this).addClass("open");
+                $("#menuOpen").removeClass("d-none");
+             }
+             
+            })
+            
       
 })
     

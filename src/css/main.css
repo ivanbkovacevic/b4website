@@ -6560,16 +6560,20 @@ body {
   @media (max-width: 575.98px) {
     .navbar {
       position: static;
-      padding-top: 0;
+      padding: 0;
       background-color: #222121 !important;
       margin-bottom: 20px; } }
   .navbar .navbar-expand-sm {
     background-color: transparent !important;
     z-index: 555; }
   .navbar .navbar-toggler {
-    margin-left: 30px; }
+    margin-left: 30px;
+    color: white; }
   .navbar .navbar-toggler-icon {
     border: 1px solid white; }
+  .navbar .menu-close {
+    color: white;
+    margin-left: auto; }
   .navbar .iconica-brand {
     height: 30px; }
     @media (max-width: 575.98px) {
@@ -6584,15 +6588,10 @@ body {
     padding-left: 60px; }
     @media (max-width: 575.98px) {
       .navbar .nav-link {
-        border-bottom: 1px solid white;
+        border: 1px solid rgba(255, 255, 255, 0.37);
         padding-left: 10px; }
-        .navbar .nav-link::before {
-          content: "-";
-          color: #e60028;
-          height: 100px;
-          width: 10px;
-          margin-right: 5px;
-          background-color: #e60028; } }
+        .navbar .nav-link:hover {
+          border-left: 1px solid red; } }
     .navbar .nav-link:hover {
       color: #e60028; }
 
@@ -6659,8 +6658,7 @@ body {
     margin-left: 18px; }
   .section3 .carousel-item {
     height: 300px;
-    width: 100%;
-    border: 1px solid red; }
+    width: 100%; }
   .section3 .carousel-indicators .active {
     background-color: red; }
   .section3 .carousel-li {
@@ -6870,15 +6868,22 @@ body {
       .section5 h1 {
         padding-top: 30px;
         padding-left: 30px; } }
-  .section5 img {
-    margin-top: 264px;
-    width: 960px;
-    padding-bottom: 20px; }
+  .section5 .wraper2 {
+    overflow: hidden;
+    position: relative;
+    padding-left: 10px;
+    margin-top: 143px;
+    margin-bottom: 68px; }
+    @media (max-width: 575.98px) {
+      .section5 .wraper2 {
+        padding-top: 20px;
+        margin-top: 0px;
+        margin-bottom: 18px; } }
   .section5 .imageDiv {
     background-image: url("../assets/img/sittingpeople1.jpg");
     height: 880px;
     /* You must set a specified height */
-    background-position: center;
+    background-position: left;
     /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
@@ -6891,7 +6896,7 @@ body {
         width: 350px; } }
   .section5 .redBox2 {
     position: absolute;
-    top: 70px;
+    top: 0px;
     left: 290px;
     width: 865px;
     height: 375px;
@@ -6902,14 +6907,15 @@ body {
       .section5 .redBox2 {
         top: -20px;
         left: 90px;
-        width: 865px;
-        height: 55px; } }
+        width: 365px;
+        height: 130px; } }
   .section5 .rollGray2 {
+    border: 1px solid orange;
     position: absolute;
-    top: 15.5%;
-    left: 15px;
+    top: 9.5%;
+    left: 0px;
     right: -122px;
-    bottom: 21%;
+    bottom: 10%;
     background-color: #aaaaaa;
     z-index: 15; }
     @media (max-width: 575.98px) {
@@ -6917,10 +6923,10 @@ body {
         display: none; } }
   .section5 .rollGrayAnim2 {
     position: absolute;
-    top: 15.5%;
-    left: 15px;
+    top: 9.5%;
+    left: 0px;
     right: -122px;
-    bottom: 21%;
+    bottom: 10%;
     background-color: #aaaaaa;
     z-index: 15;
     animation: rollingGray2 2s forwards; }
@@ -7041,6 +7047,9 @@ body {
     @media (max-width: 575.98px) {
       .section7 .inputInform {
         width: 250px; } }
+    @media (max-width: 991.98px) {
+      .section7 .inputInform {
+        width: 232px; } }
   .section7 .myForm2 {
     display: none;
     padding-top: 50px;
@@ -7152,6 +7161,10 @@ body {
         background-size: 70px;
         background-position: center;
         background-color: white; } }
+    @media (max-width: 991.98px) {
+      .section7 .bdtInform {
+        width: 122px;
+        padding: 5px 10px; } }
   .section7 .bdtInformContainer {
     padding: 66px;
     background-color: #e0dfdf; }
@@ -7194,7 +7207,7 @@ body {
       transform: rotate(-90deg);
       height: 16px;
       width: 16px;
-      fill: #e60028; }
+      fill: red; }
   .section7 .iconice-sive {
     margin: 5px;
     width: 11px;
@@ -7250,16 +7263,16 @@ body {
         margin-top: 5px;
         margin-bottom: 5px; } }
   .section8 .iconice-sive {
-    border: 1px solid blue;
     width: 100%; }
     .section8 .iconice-sive a {
       margin-bottom: 0;
       display: inline-block; }
     .section8 .iconice-sive .iconica {
       display: inline-block;
-      width: 10px;
-      height: 10px;
-      margin-bottom: 0; }
+      width: 20px;
+      height: 20px;
+      margin-bottom: 0;
+      fill: #5e5b5b; }
   .section8 .section8row {
     height: 80px;
     width: 100%;
