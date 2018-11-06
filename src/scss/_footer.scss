@@ -23,15 +23,40 @@ footer {
 }
 
 .linearGradient{
+    min-height: 300px;
+    width: 900px;
+    margin: 0 auto;
+    background-image: 
+      url('../assets/img/cikasabradom.jpg');
    
-    background-image: linear-gradient(to right, $color-text-red 30%, gray 0), url('../assets/img/cikasabradom.jpg');
-    background-position: center;
-    background-size: 100%;
+    background-size: cover;
+    background-position: 0% 0%;
     margin-bottom: 100px;
-    padding: 50px;
-    height: 200px;
-    transform:  linear-gradient(90deg, $color-text-red 60%, gray 50%), url('../assets/img/cikasabradom.jpg') 2s easy-in;
+    overflow: hidden;
+  
+    &::before{
+        content: ".";
+        display: block;
+        height: 300px;
+        width: 1800px;
+        background-image: linear-gradient(to right,
+        red 50%,
+        green 50%
+        );
+        background-size: cover;
+        animation: G 3s forwards;
+    }
+ 
+
 
 }
+
+@keyframes G{
+    0%{   margin-left: -100%;
+       }
+    100%{  margin-left: 100%;}
+  
+}
+
 
 

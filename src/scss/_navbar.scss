@@ -36,13 +36,21 @@
     padding-left: 60px;
     @include media-breakpoint-down(xs) { 
         border-bottom: 1px solid white;
-         }
+        padding-left: 10px;
 
-    &:hover{
-            color:$color-text-red;       
+        &::before{
+            content: "-";
+            color:$color-text-red;   
+            height: 100px;
+            width: 10px;
+            margin-right: 5px;
+            background-color:$color-text-red;            
+        }
     }
 
+    &:hover{ color:$color-text-red;   }
     }
+
 }
 
 
