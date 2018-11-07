@@ -48,9 +48,19 @@ footer {
     }
  
 
-
+  
 }
 
+.test{
+    background-color: aquamarine;
+    width: 100vw;
+    height: 90vh;
+    text-align: center;
+    h1{
+        font-size: calc(14px + (56 - 14) * ((100vw - 300px) / (1200 - 300)));
+    }
+   
+}
 @keyframes G{
     0%{   margin-left: -100%;
        }

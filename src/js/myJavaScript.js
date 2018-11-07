@@ -121,10 +121,7 @@ $(document).ready(function(){
              }
              
             })
-            
-      
+        
 })
-    
-   
 
 
