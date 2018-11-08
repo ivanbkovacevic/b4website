@@ -6773,6 +6773,12 @@ body {
     margin-bottom: 20px; }
   .section4 .iconsRow {
     padding: 0 118px; }
+    @media (max-width: 991.98px) {
+      .section4 .iconsRow {
+        padding: 0 0; } }
+    @media (max-width: 767.98px) {
+      .section4 .iconsRow {
+        padding: 0 60px; } }
     @media (max-width: 575.98px) {
       .section4 .iconsRow {
         padding: 0 30px; } }
@@ -6831,6 +6837,9 @@ body {
     animation: movingUp 0.6s forwards;
     margin-top: 330px;
     display: none; }
+    @media (max-width: 991.98px) {
+      .section5 .wraper3 {
+        margin-top: 43px; } }
     @media (max-width: 575.98px) {
       .section5 .wraper3 {
         margin-top: 0px;
@@ -6842,6 +6851,9 @@ body {
     text-decoration: none;
     color: #e60028;
     margin-bottom: 114px; }
+    @media (max-width: 991.98px) {
+      .section5 a {
+        margin: 5px; } }
     @media (max-width: 575.98px) {
       .section5 a {
         text-align: center; } }
@@ -6857,6 +6869,9 @@ body {
     max-width: 765px;
     font-size: 18px;
     font-size: 1.8rem; }
+    @media (max-width: 991.98px) {
+      .section5 .main-p {
+        margin: 10px; } }
     @media (max-width: 575.98px) {
       .section5 .main-p {
         margin: 25px; } }
@@ -6874,6 +6889,9 @@ body {
     padding-left: 10px;
     margin-top: 143px;
     margin-bottom: 68px; }
+    @media (max-width: 991.98px) {
+      .section5 .wraper2 {
+        margin-top: 43px; } }
     @media (max-width: 575.98px) {
       .section5 .wraper2 {
         padding-top: 20px;
@@ -6889,6 +6907,9 @@ body {
     /* Do not repeat the image */
     background-size: 900px 700px;
     /* Resize the background image to cover the entire container */ }
+    @media (max-width: 991.98px) {
+      .section5 .imageDiv {
+        height: 400px; } }
     @media (max-width: 575.98px) {
       .section5 .imageDiv {
         height: 235px;
@@ -6903,6 +6924,9 @@ body {
     background-color: red;
     z-index: -1;
     animation: rollingRed2 2s forwards; }
+    @media (max-width: 991.98px) {
+      .section5 .redBox2 {
+        display: none; } }
     @media (max-width: 575.98px) {
       .section5 .redBox2 {
         top: -20px;
@@ -6910,7 +6934,6 @@ body {
         width: 365px;
         height: 130px; } }
   .section5 .rollGray2 {
-    border: 1px solid orange;
     position: absolute;
     top: 9.5%;
     left: 0px;
@@ -6918,6 +6941,9 @@ body {
     bottom: 10%;
     background-color: #aaaaaa;
     z-index: 15; }
+    @media (max-width: 991.98px) {
+      .section5 .rollGray2 {
+        display: none; } }
     @media (max-width: 575.98px) {
       .section5 .rollGray2 {
         display: none; } }
@@ -6930,6 +6956,9 @@ body {
     background-color: #aaaaaa;
     z-index: 15;
     animation: rollingGray2 2s forwards; }
+    @media (max-width: 991.98px) {
+      .section5 .rollGrayAnim2 {
+        display: none; } }
     @media (max-width: 575.98px) {
       .section5 .rollGrayAnim2 {
         display: none; } }
@@ -6961,6 +6990,9 @@ body {
 .section6 {
   border-top: 2px solid #aaaaaa;
   padding: 0 120px; }
+  @media (max-width: 991.98px) {
+    .section6 {
+      padding: 0 50px; } }
   @media (max-width: 575.98px) {
     .section6 {
       padding: 0 30px; } }
@@ -6971,6 +7003,10 @@ body {
     animation: apear 2.5s forwards; }
   @media (max-width: 575.98px) {
     .section6 .apearSM {
+      opacity: 0;
+      animation: apear 2.5s forwards; } }
+  @media (max-width: 991.98px) {
+    .section6 .apearMD {
       opacity: 0;
       animation: apear 2.5s forwards; } }
   .section6 h1 {
@@ -7237,6 +7273,9 @@ body {
       padding-left: 10px; } }
   .section8 .section8Col {
     padding-bottom: 50px; }
+    @media (max-width: 767.98px) {
+      .section8 .section8Col {
+        padding-bottom: 10px; } }
     @media (max-width: 575.98px) {
       .section8 .section8Col {
         padding-left: 10px;
@@ -7258,6 +7297,14 @@ body {
     margin-bottom: 65px;
     font-size: 13px;
     font-size: 1.3rem; }
+    @media (max-width: 991.98px) {
+      .section8 h6 {
+        margin-top: 30px;
+        margin-bottom: 20px; } }
+    @media (max-width: 767.98px) {
+      .section8 h6 {
+        margin-top: 15px;
+        margin-bottom: 10px; } }
     @media (max-width: 575.98px) {
       .section8 h6 {
         margin-top: 5px;

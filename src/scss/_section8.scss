@@ -1,12 +1,18 @@
 .section8{
     color:$color-gray;
     padding-left: 60px;
+    @include media-breakpoint-down(sm) { 
+
+     }
     @include media-breakpoint-down(xs) { 
         padding-left: 10px;
     }
 
     .section8Col{
         padding-bottom: 50px;
+        @include media-breakpoint-down(sm) { 
+            padding-bottom: 10px;
+        }
         @include media-breakpoint-down(xs) { 
             padding-left: 10px;
             padding-right: 10px;
@@ -32,6 +38,14 @@
         margin-top: 90px;
         margin-bottom: 65px;
         @include font-size(1.3);
+        @include media-breakpoint-down(md) { 
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        @include media-breakpoint-down(sm) { 
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
         @include media-breakpoint-down(xs) { 
             margin-top: 5px;
             margin-bottom: 5px;

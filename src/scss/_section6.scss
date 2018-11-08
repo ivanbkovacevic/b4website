@@ -2,6 +2,9 @@
 
     border-top: 2px solid $color-gray;
     padding: 0 120px;
+    @include media-breakpoint-down(md) { 
+        padding:0 50px;
+         }
     @include media-breakpoint-down(xs) { 
        padding:0 30px;
          }
@@ -15,6 +18,14 @@
 
     .apearSM{
         @include media-breakpoint-down(xs) { 
+        opacity: 0;
+        animation: apear 2.5s forwards;
+         }
+      
+    }
+
+    .apearMD{
+        @include media-breakpoint-down(md) { 
         opacity: 0;
         animation: apear 2.5s forwards;
          }

@@ -14,6 +14,7 @@
         margin-bottom:55px;
         height: 250px;
         }
+       
 }
 
 a{
@@ -125,9 +126,15 @@ a{
 
     .iconsRow{
        padding: 0 118px;
-       @include media-breakpoint-down(xs) { 
-        padding: 0 30px;
+         @include media-breakpoint-down(md) {
+            padding: 0 0;
          }
+         @include media-breakpoint-down(sm) { 
+            padding: 0 60px;
+          }
+          @include media-breakpoint-down(xs) { 
+            padding: 0 30px;
+             }
        
     }
 

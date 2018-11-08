@@ -66,7 +66,7 @@ $(document).ready(function(){
             }
 
             if(scroll >= 3800){
-                if(w>576){
+                if(w>767){
                 $('#sec6-col1').addClass('apear');
                 setTimeout(function() {
                  $('#sec6-col2').addClass('apear');
