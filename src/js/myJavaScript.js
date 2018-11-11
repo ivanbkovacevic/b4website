@@ -121,6 +121,10 @@ $(document).ready(function(){
              }
              
             })
+
+            // $("#tiha").click(function(){
+            //     $(this).addClass("animated slideOutUp");
+            // })
         
 })
 
