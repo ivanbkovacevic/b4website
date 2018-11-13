@@ -7339,6 +7339,9 @@ footer {
   border-top: 1px solid #aaaaaa;
   padding: 23px 60px;
   color: #aaaaaa; }
+  @media (max-width: 575.98px) {
+    footer {
+      padding: 3px 6px; } }
   footer .foterItems {
     display: inline-block; }
   footer a {

@@ -5,6 +5,9 @@ footer {
     border-top: 1px solid $color-gray;
     padding: 23px 60px;
     color:$color-gray;
+    @include media-breakpoint-down(xs) { 
+        padding: 3px 6px;
+    }
 
     .foterItems {
         display: inline-block;
